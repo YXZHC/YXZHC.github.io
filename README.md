@@ -5,3 +5,7 @@
 支持意外关闭后恢复答题进度功能，不用 担心答题数据丢失！答题结束系统自动生成答题报告，答题时间，正确率一目了然！
 系统自动生成答题日志，可发送至用户邮箱，随时随 地查缺补漏！
 ![1002](https://user-images.githubusercontent.com/80094007/197664059-f6042b70-2bd7-4e8c-9e59-a4964525a55a.png)
+
+
+![Visitor Count](https://profile-counter.glitch.me/Christmas/count.svg)
+
