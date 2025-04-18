@@ -75,8 +75,8 @@ Python     █████████░░░ 85%   # 会写优雅代码，也
 
 ## 📮 召唤方式
 
-📧 **Email**: [你的邮箱]  
-💻 **GitHub**: [github链接]  
+📧 **Email**: [yx_hz7ch@163.com]  
+💻 **GitHub**: [https://github.com/YXZHC]  
 📱 **LinkedIn**: [个人主页]  
 🤖 **近期在造**: 一个会吐槽我的桌面机器人... (进度 73% ████░░░░)
 

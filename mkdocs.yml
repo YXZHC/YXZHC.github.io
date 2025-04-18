@@ -20,7 +20,9 @@ theme:
         name: 切换到亮色模式
 
 nav: 
-  - 主页: index.md
+  - Home:
+      - Home: index.md
+      - C++: C++/index.md
   - 关于我: about.md
 
 
