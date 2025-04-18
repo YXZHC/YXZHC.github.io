@@ -4,7 +4,23 @@ theme:
   # name: mkdocs
   name: material
 
+  language: zh
+
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到亮色模式
 
 nav: 
   - 主页: index.md
   - 关于我: about.md
+
+

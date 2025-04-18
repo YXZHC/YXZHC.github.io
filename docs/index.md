@@ -1,17 +1,86 @@
-# Welcome to MkDocs
+# 🤖 你好，我是机器人灵魂工程师 [你的名字] 🚀
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+![机器人头像/个人logo](/home/robot/你的头像链接)  
+*"让代码在钢铁躯壳中跳舞"* 🔥
 
-## Commands
+---
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 🛠️ **技术工具箱** ⚙️
 
-## Project layout
+```python
+while True:
+    探索机器人前沿技术()
+    喝咖啡 ☕ *= 2  # 程序员的永动机
+```
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **核心语言**:  
+  🐍 Python 魔法师 | � C++ 性能狂魔 | 📡 嵌入式 whisperer
+
+- **机器人生态**:  
+  ROS2 🦾 (Navigation2/ControlManger/TF2) | Gazebo 🌐 | MoveIt 🤖
+
+- **硬核领域**:  
+  SLAM 🗺️ | 运动控制 ⚡ | 传感器融合 📡 | 实时系统 ⏱️
+
+- **超能力**:  
+  Git 时空穿梭者 🕰️ | Docker 容器召唤师 📦 | CI/CD 流水线建筑师 🌉
+
+---
+
+## 🚀 **高光项目** 💥
+
+### 1. [ROS2 自主导航机器人](项目链接)
+
+![导航演示gif](/home/robot/链接)  
+▌ 用 **行为树** 重构决策系统，路径规划精度 ↑ 30%  
+▌ 实现多机协同时的 **动态避障算法** 🤖🤖  
+▌ 在 Jetson Nano 上达成 **15ms** 实时响应 🚨  
+`ROS2` `C++17` `OpenCV` `行为树.CPP`
+
+### 2. 工业机器人自动化测试框架
+
+🛠️ 开发了会自己写测试报告的 **Python机器人** 🤯  
+
+```bash
+$ pytest --robot-dance-level=pro  # 是的，我加了彩蛋参数
+```
+
+▌ 可视化测试场景生成器 🎮  
+▌ 异常注入系统 🧪 (比如：假装激光雷达突然瞎了)  
+▌ 测试效率提升 400% 📈  
+`Python` `PyQt` `ROS2 Bag` `Allure报告`
+
+---
+
+## 🔭 **开源印记** 
+
+- **贡献者** @ [知名机器人项目](链接)  
+  🛠️ 修复了那个让机械臂跳广场舞的 TF 坐标系 bug 💃
+
+- **维护者** of [你的GitHub项目](链接)  
+  🌱 一个让嵌入式开发更快乐的 CLI 工具链
+
+---
+
+## 🌟 **技能树** 
+
+```plaintext
+C++        ██████████░░ 90%   # 沉迷模板元编程的危险分子
+ROS2       ███████████░ 95%   # 能用 rqt_graph 画出星空图
+嵌入式      ██████████░░ 88%   # 调过最野的 STM32，焊过最迷你的 PCB
+Python     █████████░░░ 85%   # 会写优雅代码，也会写同事看不懂的黑魔法
+```
+
+---
+
+## 📮 召唤方式
+
+📧 **Email**: [你的邮箱]  
+💻 **GitHub**: [github链接]  
+📱 **LinkedIn**: [个人主页]  
+🤖 **近期在造**: 一个会吐槽我的桌面机器人... (进度 73% ████░░░░)
+
+---
+
+> *"代码应该有温度，就像机器人眨眼的瞬间✨"*
+
