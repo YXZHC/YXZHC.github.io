@@ -45,9 +45,9 @@
 
 1. 左侧导航栏可按技术分类快速定位内容
 
-1. 所有代码示例均提供[Gi](https://github.com/your-username)[tHub 仓](https://github.com/your-username)[库](https://github.com/your-username)同步更新
+1. 所有代码示例均提供[Gi](https://github.com/YXZHC)[tHub 仓](https://github.com/YXZHC)[库](https://github.com/YXZHC)同步更新
 
-1. 欢迎通过📧 your-email@example.com 提出技术问题或合作建议
+1. 欢迎通过📧 yx_hz7ch@163.com 提出技术问题或合作建议
 
 ## ✨ 关于我
 

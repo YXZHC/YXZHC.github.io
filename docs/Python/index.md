@@ -23,8 +23,8 @@ Python3凭借其简洁高效、丰富的库资源以及强大的跨平台能力�
 
 ## 🔧 使用指南
 - 左侧导航栏可按技术分类快速定位内容。
-- 所有代码示例均提供[GitHub仓库](https://github.com/your-username)同步更新，方便学习和参考。
-- 遇到问题或有合作意向，欢迎通过📧 your-email@example.com 与我交流。
+- 所有代码示例均提供[GitHub仓库](https://github.com/YXZHC)同步更新，方便学习和参考。
+- 遇到问题或有合作意向，欢迎通过📧 yx_hz7ch@163.com 与我交流。
 
 ## ✨ 学习资源推荐
 - **官方文档**：Python3官方文档、ROS2 Python开发文档等权威资料。

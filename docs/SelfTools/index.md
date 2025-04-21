@@ -27,9 +27,6 @@
 
 ## 📮 联系与反馈
 若使用中遇到问题，或有新功能建议，欢迎随时联系：
-- 邮箱：toolset@example.com 📧
+- 邮箱：yx_hz7ch@163.com 📧
 - GitHub：[点击查看项目仓库](https://github.com/yourusername/toolset) 🚀
 - 反馈表单：[快速提交建议](https://example.com/feedback) 📝
-
-快来体验「高效工具集」，开启便捷高效之旅 ⬇️
-[立即进入工具集](https://yourdomain.com/toolset)

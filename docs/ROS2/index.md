@@ -24,8 +24,8 @@ ROS2（Robot Operating System 2）作为下一代机器人操作系统，为机�
 
 ## 🔧 使用指南
 - 左侧导航栏可按内容分类快速定位所需资料。
-- 所有ROS2代码示例均在[GitHub仓库](https://github.com/your-username)同步更新，方便参考与下载。
-- 若在学习和实践过程中遇到问题，或有合作交流意向，欢迎通过📧 your-email@example.com 与我联系！
+- 所有ROS2代码示例均在[GitHub仓库](https://github.com/YXZHC)同步更新，方便参考与下载。
+- 若在学习和实践过程中遇到问题，或有合作交流意向，欢迎通过📧 yx_hz7ch@163.com 与我联系！
 
 ## ✨ 学习资源推荐
 - **官方文档**：ROS2官方文档是学习的权威资料，涵盖从入门到进阶的详细内容 。
