@@ -26,7 +26,22 @@ theme:
 nav: 
   - Home:
       - Home: index.md
+
+  - ROS2:
+      - ROS2: ROS2/index.md
+  
+  - C++:
       - C++: C++/index.md
+  
+  - Python:
+      - Python: Python/index.md
+
+  - Linux:
+      - Linux: Linux/index.md
+
+  - LabVIEW:
+      - LabVIEW: LabVIEW/index.md
+
   - 关于我: about.md
 
 
