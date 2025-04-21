@@ -28,9 +28,8 @@ nav:
       - Home: index.md
   
   - 自制工具集:
-      - 自制工具集:
-          - 自制工具集: SelfTools/index.md
-          - 轻量化答题: SelfTools/answering_quiz.md
+      - 自制工具集: SelfTools/
+      - 轻量化答题: SelfTools/answering_quiz.md
 
   - ROS2:
       - ROS2: ROS2/index.md
