@@ -3,8 +3,12 @@ theme:
   # name: readthedocs
   # name: mkdocs
   name: material
-
+  favicon: images/ico/ico.jpg
   language: zh
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
 
   palette: 
     # Palette toggle for light mode
