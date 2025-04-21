@@ -75,4 +75,3 @@
 如果你在使用中遇到问题，或者有功能建议，欢迎通过以下方式联系我：  
 - 邮箱：yx_hz7ch@163.com 📧  
 - GitHub：[点击查看项目仓库](https://github.com/YXZHC) 🚀  
-- 反馈表单：[快速提交建议](https://example.com/feedback) 📝  
