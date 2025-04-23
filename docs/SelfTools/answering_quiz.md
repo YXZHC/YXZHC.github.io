@@ -42,7 +42,7 @@
 ### 🚀 开发版（Developer Version）
 **特点**：不包含运行时环境，需要电脑中包含运行时环境，可能存在少量不稳定情况  
 **适用人群**：已经安装过低版本，且已经安装过运行时环境  
-**版本号**：v3.0.0-dev（2023.02.15更新
+**版本号**：v3.0.0-dev（2023.02.15更新）
 📲 [Windows下载](https://www.123pan.com/s/yWbKVv-AhBU3.html)  
 **版本号**：v3.1.0-dev（2023.10.16更新）
 📲 [Windows下载](https://www.123pan.com/s/yWbKVv-9hBU3.html)  
