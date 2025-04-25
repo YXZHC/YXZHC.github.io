@@ -35,7 +35,11 @@ nav:
   - ROS2:
       - ROS2: ROS2/index.md
       - Node: ROS2/Node.md
-      - Topic: ROS2/Topic.md
+      - Topic: 
+          - 概述: ROS2/Topic.md
+          - 订阅: ROS2/Subscriber.md
+          - 发布: ROS2/Publisher.md
+
       - Service: ROS2/Service.md
       - Action: ROS2/Action.md
 
