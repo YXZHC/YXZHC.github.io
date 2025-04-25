@@ -69,7 +69,7 @@ extra:
 
 
 markdown_extensions:
-  - mermaid
+  - mermaid2
   - abbr
   - pymdownx.caret
   - pymdownx.mark
