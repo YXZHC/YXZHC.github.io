@@ -9,6 +9,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - content.code.copy #代码复制
 
   palette: 
     # Palette toggle for light mode
