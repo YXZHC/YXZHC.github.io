@@ -69,6 +69,7 @@ extra:
 
 
 markdown_extensions:
+  - mermaid
   - abbr
   - pymdownx.caret
   - pymdownx.mark
@@ -84,7 +85,6 @@ markdown_extensions:
       # auto_title: true # 显示编程语言名称
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
