@@ -1,14 +1,14 @@
-site_name: YX的小站
-theme:
-  # name: readthedocs
-  # name: mkdocs
-  name: material
-  favicon: images/ico/ico.jpg
-  language: zh
+site_name: YX的小站 # 网站名称
+theme:  
+  name: material  # 主题名称
+  favicon: images/ico/ico.jpg # 网站图标
+  language: zh  # 语言
 
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
+  features: 
+    - navigation.tabs # 选项卡导航
+    - navigation.tabs.sticky  # 选项卡导航固定
+    - navigation.top  # 顶部导航
+    - navigation.expand  # 导航栏展开
     - content.code.copy #代码复制
 
   palette: 
