@@ -7,7 +7,7 @@ theme:
   features: 
     - navigation.tabs # 选项卡导航
     - navigation.tabs.sticky  # 选项卡导航固定
-    - navigation.top  # 顶部导航
+    # - navigation.top  # 顶部导航
     - navigation.expand  # 导航栏展开
     - content.code.copy #代码复制
 
@@ -46,6 +46,7 @@ nav:
   
   - C++:
       - C++: C++/index.md
+      - C++基本语法: C++/C++基本语法.md
   
   - Python:
       - Python: Python/index.md
@@ -61,7 +62,7 @@ nav:
 
 
 extra:
-  generator: true  #删除页脚显示“使用 MkDocs 材料制造”
+  generator: false  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/489593500?spm_id_from=333.1007.0.0
