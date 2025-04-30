@@ -47,6 +47,8 @@ nav:
   - C++:
       - C++: C++/index.md
       - C++基本语法: C++/C++基本语法.md
+      - C++变量类型: C++/C++变量类型.md
+      - C++面向对象: C++/C++面向对象.md
   
   - Python:
       - Python: Python/index.md
