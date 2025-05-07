@@ -54,6 +54,9 @@ nav:
   
   - Python:
       - Python: Python/index.md
+      - Python关键字: Python/Python关键字.md
+      - Python基本语法: Python/Python基本语法.md
+      - Python变量类型: Python/Python变量类型.md
 
   - Linux:
       - Linux: Linux/index.md
