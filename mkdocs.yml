@@ -57,7 +57,8 @@ nav:
       - Python关键字: Python/Python关键字.md
       - Python基本语法: Python/Python基本语法.md
       - Python变量类型: Python/Python变量类型.md
-      - Python Math: Python/Python_math.md
+      - Python Math: Python/Math.md
+      - Python NumPy: Python/NumPy.md
       
 
   - Linux:
