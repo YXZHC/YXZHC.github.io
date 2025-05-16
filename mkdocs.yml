@@ -66,6 +66,8 @@ nav:
       - Linux: Linux/index.md
       - Linux命令: Linux/Linux命令.md
       - Linux文件系统: Linux/Linux文件系统.md
+      - Linux网络: Linux/Linux网络.md
+      - Linux进程: Linux/Linux进程.md
 
 
   - LabVIEW:
