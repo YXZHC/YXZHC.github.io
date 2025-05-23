@@ -34,7 +34,9 @@ nav:
 
   - ROS2:
       - ROS2: ROS2/index.md
+
       - Node: ROS2/Node.md
+      
       - Topic: 
         - 概述: ROS2/Topic.md
         - 订阅: ROS2/Topic/Subscriber.md
@@ -44,9 +46,10 @@ nav:
         - 概述: ROS2/Service.md
         - Service: ROS2/Service/Service.md
         - Client: ROS2/Service/Client.md
-        
-      - Action: ROS2/Action.md
 
+      - Action:
+        - 概述: ROS2/Action.md
+        - Action: ROS2/Action/Action.md
   
   - C++:
       - C++: C++/index.md
@@ -79,7 +82,6 @@ nav:
 
 
   - 关于我: about.md
-
 
 
 extra:
