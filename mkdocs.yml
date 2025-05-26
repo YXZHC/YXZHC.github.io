@@ -67,6 +67,11 @@ nav:
       - Python Math: Python/Math.md
       - Python NumPy: Python/NumPy.md
       - Python 循环结构: Python/Python循环结构.md
+      - Python 函数: Python/Python函数.md
+      - Python 面向对象: Python/Python面向对象.md
+      - Python 异常处理: Python/Python异常处理.md
+      - Python 文件操作: Python/Python文件操作.md
+      - Python 正则表达式: Python/Python正则表达式.md
       
 
   - Linux:
