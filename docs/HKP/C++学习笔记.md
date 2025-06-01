@@ -1,7 +1,5 @@
 # C++ 学习笔记
 
-[TOC]
-
 
 
 # 一、C++ 初识
@@ -675,7 +673,7 @@ int main()
    string str2 = "Hello worl";
    string str3 = "hello world";
    str2 += str[10];		//字符串可以使用索引下标
-cout << str2 << endl;
+   cout << str2 << endl;
    ```
    
    > 【注意】C++风格字符串，需要加入头文件 `#include <string>`
