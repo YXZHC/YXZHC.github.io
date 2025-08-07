@@ -31,11 +31,7 @@ nav:
   - 自制工具集:
     - 概述: SelfTools/index.md
     - 答题系统: SelfTools/answering_quiz.md
-    
-  - HKP_知识库:
-    - ROS2学习笔记: HKP/C++学习笔记.md
-
-
+  
   - ROS2:
       - ROS2: ROS2/index.md
 
@@ -79,6 +75,8 @@ nav:
 
       - Python 正则表达式: Python/Python正则表达式.md
 
+  - HKP_知识库:
+    - ROS2学习笔记: HKP/C++学习笔记.md
 
 
   - Linux:
