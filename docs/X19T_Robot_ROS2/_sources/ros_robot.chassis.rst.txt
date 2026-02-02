@@ -1,0 +1,29 @@
+ros\_robot.chassis package
+==========================
+
+Submodules
+----------
+
+ros\_robot.chassis.chassis\_manager module
+------------------------------------------
+
+.. automodule:: ros_robot.chassis.chassis_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.chassis.io\_manager module
+-------------------------------------
+
+.. automodule:: ros_robot.chassis.io_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ros_robot.chassis
+   :members:
+   :undoc-members:
+   :show-inheritance:

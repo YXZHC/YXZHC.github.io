@@ -1,0 +1,618 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ros_robot package &mdash; HB_Ros_Robot_Python 2.0.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=b15d7ad8"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="ros_robot.chassis package" href="ros_robot.chassis.html" />
+    <link rel="prev" title="HB_Ros_Robot_Python" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HB_Ros_Robot_Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">API 接口:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">HB_Ros_Robot_Python</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ros_robot package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html">ros_robot.chassis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.config.html">ros_robot.config package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html">ros_robot.navigation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html">ros_robot.oms package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html">ros_robot.sensor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html">ros_robot.utils package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html">ros_robot.vision package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ros_robot.robotics">ros_robot.robotics module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ros_robot.robotics.Robotics"><code class="docutils literal notranslate"><span class="pre">Robotics</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ros_robot.robotics.call_once"><code class="docutils literal notranslate"><span class="pre">call_once()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-ros_robot">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HB_Ros_Robot_Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">HB_Ros_Robot_Python</a></li>
+      <li class="breadcrumb-item active">ros_robot package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ros_robot.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ros-robot-package">
+<h1>ros_robot package<a class="headerlink" href="#ros-robot-package" title="Link to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ros_robot.chassis.html">ros_robot.chassis package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.chassis.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.chassis.html#module-ros_robot.chassis.chassis_manager">ros_robot.chassis.chassis_manager module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisManager"><code class="docutils literal notranslate"><span class="pre">ChassisManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisManager.call_sync"><code class="docutils literal notranslate"><span class="pre">ChassisManager.call_sync()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisManager.get_odom_data"><code class="docutils literal notranslate"><span class="pre">ChassisManager.get_odom_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisManager.get_odom_pose"><code class="docutils literal notranslate"><span class="pre">ChassisManager.get_odom_pose()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisManager.init_odometry"><code class="docutils literal notranslate"><span class="pre">ChassisManager.init_odometry()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisManager.is_initialized"><code class="docutils literal notranslate"><span class="pre">ChassisManager.is_initialized()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisManager.quaternion_to_euler"><code class="docutils literal notranslate"><span class="pre">ChassisManager.quaternion_to_euler()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisManager.set_cmdvel"><code class="docutils literal notranslate"><span class="pre">ChassisManager.set_cmdvel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisManager.set_manual_vel"><code class="docutils literal notranslate"><span class="pre">ChassisManager.set_manual_vel()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisMode"><code class="docutils literal notranslate"><span class="pre">ChassisMode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisMode.AUTO"><code class="docutils literal notranslate"><span class="pre">ChassisMode.AUTO</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.ChassisMode.MANUAL"><code class="docutils literal notranslate"><span class="pre">ChassisMode.MANUAL</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.OdomClearMode"><code class="docutils literal notranslate"><span class="pre">OdomClearMode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.OdomClearMode.CLEAR_ALL"><code class="docutils literal notranslate"><span class="pre">OdomClearMode.CLEAR_ALL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.OdomClearMode.CLEAR_POSE"><code class="docutils literal notranslate"><span class="pre">OdomClearMode.CLEAR_POSE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.OdomClearMode.CLEAR_YAW"><code class="docutils literal notranslate"><span class="pre">OdomClearMode.CLEAR_YAW</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.OdomType"><code class="docutils literal notranslate"><span class="pre">OdomType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.OdomType.DEFAULT"><code class="docutils literal notranslate"><span class="pre">OdomType.DEFAULT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.chassis_manager.OdomType.USER"><code class="docutils literal notranslate"><span class="pre">OdomType.USER</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.chassis.html#module-ros_robot.chassis.io_manager">ros_robot.chassis.io_manager module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DiInput"><code class="docutils literal notranslate"><span class="pre">DiInput</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DiInput.DI_0"><code class="docutils literal notranslate"><span class="pre">DiInput.DI_0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DiInput.DI_1"><code class="docutils literal notranslate"><span class="pre">DiInput.DI_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DiInput.DI_2"><code class="docutils literal notranslate"><span class="pre">DiInput.DI_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DiInput.DI_3"><code class="docutils literal notranslate"><span class="pre">DiInput.DI_3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DoOutput"><code class="docutils literal notranslate"><span class="pre">DoOutput</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DoOutput.DO_0"><code class="docutils literal notranslate"><span class="pre">DoOutput.DO_0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DoOutput.DO_1"><code class="docutils literal notranslate"><span class="pre">DoOutput.DO_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DoOutput.DO_2"><code class="docutils literal notranslate"><span class="pre">DoOutput.DO_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.DoOutput.DO_3"><code class="docutils literal notranslate"><span class="pre">DoOutput.DO_3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.IOManager"><code class="docutils literal notranslate"><span class="pre">IOManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.IOManager.are_all_di_initialized"><code class="docutils literal notranslate"><span class="pre">IOManager.are_all_di_initialized()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.IOManager.get_uninitialized_di"><code class="docutils literal notranslate"><span class="pre">IOManager.get_uninitialized_di()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.IOManager.read_di_input"><code class="docutils literal notranslate"><span class="pre">IOManager.read_di_input()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.IOManager.set_all_outputs"><code class="docutils literal notranslate"><span class="pre">IOManager.set_all_outputs()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.IOManager.set_output"><code class="docutils literal notranslate"><span class="pre">IOManager.set_output()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.MDCInput"><code class="docutils literal notranslate"><span class="pre">MDCInput</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.MDCInput.MDC_DI_0"><code class="docutils literal notranslate"><span class="pre">MDCInput.MDC_DI_0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.MDCInput.MDC_DI_1"><code class="docutils literal notranslate"><span class="pre">MDCInput.MDC_DI_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.MDCInput.MDC_DI_2"><code class="docutils literal notranslate"><span class="pre">MDCInput.MDC_DI_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html#ros_robot.chassis.io_manager.MDCInput.MDC_DI_3"><code class="docutils literal notranslate"><span class="pre">MDCInput.MDC_DI_3</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.chassis.html#module-ros_robot.chassis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ros_robot.config.html">ros_robot.config package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.config.html#module-ros_robot.config">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ros_robot.navigation.html">ros_robot.navigation package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.navigation.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.navigation.html#module-ros_robot.navigation.base_motion_kit">ros_robot.navigation.base_motion_kit module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.cancel"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.cancel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.get_feedback"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.get_feedback()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.is_moving"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.is_moving()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.set_diff_follow_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_diff_follow_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.set_line_driver_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_line_driver_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.set_omni_wheel_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_omni_wheel_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.set_ptp_driver_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_ptp_driver_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.set_rotate_driver_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_rotate_driver_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.start"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.start()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.BaseMotionKit.wait_finished"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.wait_finished()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowFeedback"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowFeedback.curr_ld"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback.curr_ld</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowFeedback.distance"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback.distance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowFeedback.from_json"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback.from_json()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowFeedback.point_idx"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback.point_idx</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowParam"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowParam.angular_vel"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam.angular_vel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowParam.linear_vel"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam.linear_vel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowParam.rotate_acc"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam.rotate_acc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DiffFollowParam.rotate_decel"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam.rotate_decel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DriverType"><code class="docutils literal notranslate"><span class="pre">DriverType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DriverType.BASIC_LINEAR_MOTION"><code class="docutils literal notranslate"><span class="pre">DriverType.BASIC_LINEAR_MOTION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DriverType.BASIC_ROTATIONAL_MOTION"><code class="docutils literal notranslate"><span class="pre">DriverType.BASIC_ROTATIONAL_MOTION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DriverType.DIFFERENTIAL_FOLLOW_MOTION"><code class="docutils literal notranslate"><span class="pre">DriverType.DIFFERENTIAL_FOLLOW_MOTION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DriverType.DIFFERENTIAL_PTP"><code class="docutils literal notranslate"><span class="pre">DriverType.DIFFERENTIAL_PTP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.DriverType.OMNI_WHEEL_DRIVER"><code class="docutils literal notranslate"><span class="pre">DriverType.OMNI_WHEEL_DRIVER</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback.currTime"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.currTime</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback.from_json"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.from_json()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback.pathTime"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pathTime</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback.pointIndex"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pointIndex</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback.pointW"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pointW</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback.pointX"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pointX</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback.pointY"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pointY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback.segIndex"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.segIndex</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelFeedback.timeEnd"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.timeEnd</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam.end_tacc"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.end_tacc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam.end_tacc_w"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.end_tacc_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam.middle_tacc"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.middle_tacc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam.start_tacc"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.start_tacc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam.start_tacc_w"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.start_tacc_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam.sync_rotate"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.sync_rotate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam.velocity_w"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.velocity_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam.velocity_x"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.velocity_x</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.OmniWheelParam.velocity_y"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.velocity_y</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPFeedback"><code class="docutils literal notranslate"><span class="pre">PTPFeedback</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPFeedback.curr_point_index"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.curr_point_index</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPFeedback.curr_time"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.curr_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPFeedback.curr_total_time"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.curr_total_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPFeedback.from_json"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.from_json()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPFeedback.goal_rotate_final"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.goal_rotate_final</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPFeedback.point_size"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.point_size</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPFeedback.state"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.state</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPParam"><code class="docutils literal notranslate"><span class="pre">PTPParam</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPParam.angular_vel"><code class="docutils literal notranslate"><span class="pre">PTPParam.angular_vel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPParam.linear_acc"><code class="docutils literal notranslate"><span class="pre">PTPParam.linear_acc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPParam.linear_decel"><code class="docutils literal notranslate"><span class="pre">PTPParam.linear_decel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPParam.linear_vel"><code class="docutils literal notranslate"><span class="pre">PTPParam.linear_vel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPParam.rotate_acc"><code class="docutils literal notranslate"><span class="pre">PTPParam.rotate_acc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html#ros_robot.navigation.base_motion_kit.PTPParam.rotate_decel"><code class="docutils literal notranslate"><span class="pre">PTPParam.rotate_decel</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.navigation.html#module-ros_robot.navigation">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ros_robot.oms.html">ros_robot.oms package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.oms.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.oms.html#module-ros_robot.oms.lift_motor">ros_robot.oms.lift_motor module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor"><code class="docutils literal notranslate"><span class="pre">LiftMotor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.back_origin"><code class="docutils literal notranslate"><span class="pre">LiftMotor.back_origin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.cail_dis"><code class="docutils literal notranslate"><span class="pre">LiftMotor.cail_dis</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.cail_step"><code class="docutils literal notranslate"><span class="pre">LiftMotor.cail_step</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.get_feedback"><code class="docutils literal notranslate"><span class="pre">LiftMotor.get_feedback()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.get_planner_data"><code class="docutils literal notranslate"><span class="pre">LiftMotor.get_planner_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.max_distance"><code class="docutils literal notranslate"><span class="pre">LiftMotor.max_distance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.min_distance"><code class="docutils literal notranslate"><span class="pre">LiftMotor.min_distance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.set_position"><code class="docutils literal notranslate"><span class="pre">LiftMotor.set_position()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.set_position_with_plan"><code class="docutils literal notranslate"><span class="pre">LiftMotor.set_position_with_plan()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.lift_motor.LiftMotor.wait_finished"><code class="docutils literal notranslate"><span class="pre">LiftMotor.wait_finished()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.oms.html#module-ros_robot.oms.oms_param">ros_robot.oms.oms_param module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.oms.html#module-ros_robot.oms.servo">ros_robot.oms.servo module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.Servo"><code class="docutils literal notranslate"><span class="pre">Servo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.Servo.PWM0"><code class="docutils literal notranslate"><span class="pre">Servo.PWM0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.Servo.PWM1"><code class="docutils literal notranslate"><span class="pre">Servo.PWM1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.Servo.PWM2"><code class="docutils literal notranslate"><span class="pre">Servo.PWM2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.Servo.PWM3"><code class="docutils literal notranslate"><span class="pre">Servo.PWM3</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.Servo.PWM4"><code class="docutils literal notranslate"><span class="pre">Servo.PWM4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.Servo.PWM5"><code class="docutils literal notranslate"><span class="pre">Servo.PWM5</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.Servo.PWM6"><code class="docutils literal notranslate"><span class="pre">Servo.PWM6</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.Servo.PWM7"><code class="docutils literal notranslate"><span class="pre">Servo.PWM7</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.ServoManager"><code class="docutils literal notranslate"><span class="pre">ServoManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.ServoManager.camera_pitch"><code class="docutils literal notranslate"><span class="pre">ServoManager.camera_pitch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.ServoManager.get_all_servo_pwm"><code class="docutils literal notranslate"><span class="pre">ServoManager.get_all_servo_pwm()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.ServoManager.get_servo_pwm"><code class="docutils literal notranslate"><span class="pre">ServoManager.get_servo_pwm()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.ServoManager.gripper"><code class="docutils literal notranslate"><span class="pre">ServoManager.gripper()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.ServoManager.reset_all_servos"><code class="docutils literal notranslate"><span class="pre">ServoManager.reset_all_servos()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.ServoManager.reset_servo"><code class="docutils literal notranslate"><span class="pre">ServoManager.reset_servo()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.ServoManager.set_multiple_servos"><code class="docutils literal notranslate"><span class="pre">ServoManager.set_multiple_servos()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html#ros_robot.oms.servo.ServoManager.set_servo_pwm"><code class="docutils literal notranslate"><span class="pre">ServoManager.set_servo_pwm()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.oms.html#module-ros_robot.oms">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ros_robot.sensor.html">ros_robot.sensor package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.sensor.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.sensor.html#module-ros_robot.sensor.imu">ros_robot.sensor.imu module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager"><code class="docutils literal notranslate"><span class="pre">ImuManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager.get_angular_velocity"><code class="docutils literal notranslate"><span class="pre">ImuManager.get_angular_velocity()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager.get_heading"><code class="docutils literal notranslate"><span class="pre">ImuManager.get_heading()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager.get_latest_imu_data"><code class="docutils literal notranslate"><span class="pre">ImuManager.get_latest_imu_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager.get_linear_acceleration"><code class="docutils literal notranslate"><span class="pre">ImuManager.get_linear_acceleration()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager.get_orientation"><code class="docutils literal notranslate"><span class="pre">ImuManager.get_orientation()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager.get_orientation_euler"><code class="docutils literal notranslate"><span class="pre">ImuManager.get_orientation_euler()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager.get_pitch"><code class="docutils literal notranslate"><span class="pre">ImuManager.get_pitch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager.get_roll"><code class="docutils literal notranslate"><span class="pre">ImuManager.get_roll()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.imu.ImuManager.is_initialized"><code class="docutils literal notranslate"><span class="pre">ImuManager.is_initialized()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.sensor.html#module-ros_robot.sensor.lidar">ros_robot.sensor.lidar module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.lidar.LaserScanManager"><code class="docutils literal notranslate"><span class="pre">LaserScanManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.lidar.LaserScanManager.get_latest_scan_data"><code class="docutils literal notranslate"><span class="pre">LaserScanManager.get_latest_scan_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.lidar.LaserScanManager.get_range_at_angle"><code class="docutils literal notranslate"><span class="pre">LaserScanManager.get_range_at_angle()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.lidar.LaserScanManager.is_initialized"><code class="docutils literal notranslate"><span class="pre">LaserScanManager.is_initialized()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.sensor.html#module-ros_robot.sensor.sensor_correct">ros_robot.sensor.sensor_correct module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.CorrectMode"><code class="docutils literal notranslate"><span class="pre">CorrectMode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.CorrectMode.SENSOR0"><code class="docutils literal notranslate"><span class="pre">CorrectMode.SENSOR0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.CorrectMode.SENSOR0_AND_SENSOR1"><code class="docutils literal notranslate"><span class="pre">CorrectMode.SENSOR0_AND_SENSOR1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.CorrectMode.SENSOR1"><code class="docutils literal notranslate"><span class="pre">CorrectMode.SENSOR1</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.SensorCorrect"><code class="docutils literal notranslate"><span class="pre">SensorCorrect</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.SensorCorrect.send_controls_request"><code class="docutils literal notranslate"><span class="pre">SensorCorrect.send_controls_request()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.SensorCorrect.wait_finished"><code class="docutils literal notranslate"><span class="pre">SensorCorrect.wait_finished()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.SensorType"><code class="docutils literal notranslate"><span class="pre">SensorType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.SensorType.IR"><code class="docutils literal notranslate"><span class="pre">SensorType.IR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.SensorType.LIDAR"><code class="docutils literal notranslate"><span class="pre">SensorType.LIDAR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_correct.SensorType.PING"><code class="docutils literal notranslate"><span class="pre">SensorType.PING</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.sensor.html#module-ros_robot.sensor.sensor_manager">ros_robot.sensor.sensor_manager module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.IRSensor"><code class="docutils literal notranslate"><span class="pre">IRSensor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.IRSensor.IR_0"><code class="docutils literal notranslate"><span class="pre">IRSensor.IR_0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.IRSensor.IR_1"><code class="docutils literal notranslate"><span class="pre">IRSensor.IR_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.IRSensor.IR_2"><code class="docutils literal notranslate"><span class="pre">IRSensor.IR_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.IRSensor.IR_3"><code class="docutils literal notranslate"><span class="pre">IRSensor.IR_3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.LSBSensor"><code class="docutils literal notranslate"><span class="pre">LSBSensor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.LSBSensor.LSBS"><code class="docutils literal notranslate"><span class="pre">LSBSensor.LSBS</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.LSBSensor.LSB_0"><code class="docutils literal notranslate"><span class="pre">LSBSensor.LSB_0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.LSBSensor.LSB_1"><code class="docutils literal notranslate"><span class="pre">LSBSensor.LSB_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.LSBSensor.LSB_2"><code class="docutils literal notranslate"><span class="pre">LSBSensor.LSB_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.LSBSensor.LSB_3"><code class="docutils literal notranslate"><span class="pre">LSBSensor.LSB_3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SensorManager"><code class="docutils literal notranslate"><span class="pre">SensorManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SensorManager.are_all_sensors_initialized"><code class="docutils literal notranslate"><span class="pre">SensorManager.are_all_sensors_initialized()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SensorManager.destory"><code class="docutils literal notranslate"><span class="pre">SensorManager.destory()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SensorManager.get_sensor_reading"><code class="docutils literal notranslate"><span class="pre">SensorManager.get_sensor_reading()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SensorManager.get_uninitialized_sensors"><code class="docutils literal notranslate"><span class="pre">SensorManager.get_uninitialized_sensors()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SonarSensor"><code class="docutils literal notranslate"><span class="pre">SonarSensor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SonarSensor.SONAR_0"><code class="docutils literal notranslate"><span class="pre">SonarSensor.SONAR_0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SonarSensor.SONAR_1"><code class="docutils literal notranslate"><span class="pre">SonarSensor.SONAR_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SonarSensor.SONAR_2"><code class="docutils literal notranslate"><span class="pre">SonarSensor.SONAR_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.sensor.html#ros_robot.sensor.sensor_manager.SonarSensor.SONAR_3"><code class="docutils literal notranslate"><span class="pre">SonarSensor.SONAR_3</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.sensor.html#module-ros_robot.sensor">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ros_robot.utils.html">ros_robot.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.utils.html#module-ros_robot.utils.pid">ros_robot.utils.pid module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.pid.PIDController"><code class="docutils literal notranslate"><span class="pre">PIDController</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.pid.PIDController.compute"><code class="docutils literal notranslate"><span class="pre">PIDController.compute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.pid.PIDController.reset"><code class="docutils literal notranslate"><span class="pre">PIDController.reset()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.utils.html#module-ros_robot.utils.utils">ros_robot.utils.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.FileManager"><code class="docutils literal notranslate"><span class="pre">FileManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.FileManager.close"><code class="docutils literal notranslate"><span class="pre">FileManager.close()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.FileManager.connect"><code class="docutils literal notranslate"><span class="pre">FileManager.connect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.FileManager.download_folder"><code class="docutils literal notranslate"><span class="pre">FileManager.download_folder()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.FileManager.remove_folder"><code class="docutils literal notranslate"><span class="pre">FileManager.remove_folder()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.FileManager.upload_file"><code class="docutils literal notranslate"><span class="pre">FileManager.upload_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.FileManager.upload_folder"><code class="docutils literal notranslate"><span class="pre">FileManager.upload_folder()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.file_get"><code class="docutils literal notranslate"><span class="pre">file_get()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.file_put"><code class="docutils literal notranslate"><span class="pre">file_put()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.utils.html#ros_robot.utils.utils.system_command"><code class="docutils literal notranslate"><span class="pre">system_command()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.utils.html#module-ros_robot.utils">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ros_robot.vision.html">ros_robot.vision package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.vision.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.vision.html#module-ros_robot.vision.ball_grabbing">ros_robot.vision.ball_grabbing module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.ball_grabbing.BallGrabbing"><code class="docutils literal notranslate"><span class="pre">BallGrabbing</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.ball_grabbing.BallGrabbing.calculate_grasp_point"><code class="docutils literal notranslate"><span class="pre">BallGrabbing.calculate_grasp_point()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.ball_grabbing.BallGrabbing.coordinate_transformation_3D"><code class="docutils literal notranslate"><span class="pre">BallGrabbing.coordinate_transformation_3D()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.ball_grabbing.BallGrabbing.detect_colored_balls"><code class="docutils literal notranslate"><span class="pre">BallGrabbing.detect_colored_balls()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.ball_grabbing.BallGrabbing.relative_pos_to_world_pos"><code class="docutils literal notranslate"><span class="pre">BallGrabbing.relative_pos_to_world_pos()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.ball_grabbing.Target"><code class="docutils literal notranslate"><span class="pre">Target</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.ball_grabbing.Target.center"><code class="docutils literal notranslate"><span class="pre">Target.center</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.ball_grabbing.Target.name"><code class="docutils literal notranslate"><span class="pre">Target.name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.vision.html#module-ros_robot.vision.camera">ros_robot.vision.camera module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera.Camera"><code class="docutils literal notranslate"><span class="pre">Camera</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera.Camera.read_video_stream"><code class="docutils literal notranslate"><span class="pre">Camera.read_video_stream()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera.Camera.start_video_stream"><code class="docutils literal notranslate"><span class="pre">Camera.start_video_stream()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera.Camera.stop_video_stream"><code class="docutils literal notranslate"><span class="pre">Camera.stop_video_stream()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.vision.html#module-ros_robot.vision.camera_d">ros_robot.vision.camera_d module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera_d.Camera"><code class="docutils literal notranslate"><span class="pre">Camera</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera_d.Camera.read_video_stream"><code class="docutils literal notranslate"><span class="pre">Camera.read_video_stream()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera_d.Camera.snap"><code class="docutils literal notranslate"><span class="pre">Camera.snap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera_d.Camera.start_video_stream"><code class="docutils literal notranslate"><span class="pre">Camera.start_video_stream()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera_d.Camera.stop_video_stream"><code class="docutils literal notranslate"><span class="pre">Camera.stop_video_stream()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera_d.SnapMethod"><code class="docutils literal notranslate"><span class="pre">SnapMethod</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera_d.SnapMethod.ALL"><code class="docutils literal notranslate"><span class="pre">SnapMethod.ALL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera_d.SnapMethod.COLOR"><code class="docutils literal notranslate"><span class="pre">SnapMethod.COLOR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.camera_d.SnapMethod.DEPTH"><code class="docutils literal notranslate"><span class="pre">SnapMethod.DEPTH</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.vision.html#module-ros_robot.vision.object_3d_extractor">ros_robot.vision.object_3d_extractor module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.object_3d_extractor.Object3DExtractor"><code class="docutils literal notranslate"><span class="pre">Object3DExtractor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.object_3d_extractor.Object3DExtractor.extract_object_center_3d"><code class="docutils literal notranslate"><span class="pre">Object3DExtractor.extract_object_center_3d()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.object_3d_extractor.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.vision.html#module-ros_robot.vision.user_ball_detector">ros_robot.vision.user_ball_detector module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.BallDetector"><code class="docutils literal notranslate"><span class="pre">BallDetector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.BallDetector.detect_balls"><code class="docutils literal notranslate"><span class="pre">BallDetector.detect_balls()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.area"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.area</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.bbox"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.bbox</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.center_2d"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.center_2d</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.center_3d"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.center_3d</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.class_id"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.class_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.get_center"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.get_center()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.get_width_height"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.get_width_height()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.label"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.label</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.point_density"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.point_density</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.DetectionResult3D.score"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.score</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.Point3D"><code class="docutils literal notranslate"><span class="pre">Point3D</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.Point3D.from_numpy"><code class="docutils literal notranslate"><span class="pre">Point3D.from_numpy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.Point3D.to_numpy"><code class="docutils literal notranslate"><span class="pre">Point3D.to_numpy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.Point3D.x"><code class="docutils literal notranslate"><span class="pre">Point3D.x</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.Point3D.y"><code class="docutils literal notranslate"><span class="pre">Point3D.y</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html#ros_robot.vision.user_ball_detector.Point3D.z"><code class="docutils literal notranslate"><span class="pre">Point3D.z</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.vision.html#module-ros_robot.vision">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-ros_robot.robotics">
+<span id="ros-robot-robotics-module"></span><h2>ros_robot.robotics module<a class="headerlink" href="#module-ros_robot.robotics" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.robotics.Robotics">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.robotics.</span></span><span class="sig-name descname"><span class="pre">Robotics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.robotics.Robotics" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>机器人类</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.robotics.Robotics.get_node">
+<span class="sig-name descname"><span class="pre">get_node</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.robotics.Robotics.get_node" title="Link to this definition"></a></dt>
+<dd><p>获取节点对象</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>节点对象</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.robotics.Robotics.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.robotics.Robotics.stop" title="Link to this definition"></a></dt>
+<dd><p>关闭程序</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.robotics.Robotics.wait_for_all_subscriptions">
+<span class="sig-name descname"><span class="pre">wait_for_all_subscriptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">poll_interval</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#ros_robot.robotics.Robotics.wait_for_all_subscriptions" title="Link to this definition"></a></dt>
+<dd><p>等待所有订阅者变为活跃状态</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>timeout</strong> (<em>float</em><em>, </em><em>optional</em>) -- 超时时间. Defaults to 10.0.</p></li>
+<li><p><strong>poll_interval</strong> (<em>float</em><em>, </em><em>optional</em>) -- 轮询间隔. Defaults to 0.5.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>是否成功</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ros_robot.robotics.call_once">
+<span class="sig-prename descclassname"><span class="pre">ros_robot.robotics.</span></span><span class="sig-name descname"><span class="pre">call_once</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.robotics.call_once" title="Link to this definition"></a></dt>
+<dd><p>装饰器：确保函数只被调用一次</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>func</strong> (<em>function</em>) -- 函数</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>函数</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>function</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-ros_robot">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ros_robot" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="modules.html" class="btn btn-neutral float-left" title="HB_Ros_Robot_Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="ros_robot.chassis.html" class="btn btn-neutral float-right" title="ros_robot.chassis package" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, Zhang Chao.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

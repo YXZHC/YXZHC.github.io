@@ -28,6 +28,9 @@ nav:
   - Home:
     - Home: index.md
 
+  - X19T_Robot_ROS2:
+    - X19T_Robot_ROS2: X19T_Robot_ROS2/index.html
+
   - 自制工具集:
     - 概述: SelfTools/index.md
     - 答题系统: SelfTools/answering_quiz.md

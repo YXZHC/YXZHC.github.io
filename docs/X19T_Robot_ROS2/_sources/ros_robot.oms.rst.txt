@@ -1,0 +1,37 @@
+ros\_robot.oms package
+======================
+
+Submodules
+----------
+
+ros\_robot.oms.lift\_motor module
+---------------------------------
+
+.. automodule:: ros_robot.oms.lift_motor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.oms.oms\_param module
+--------------------------------
+
+.. automodule:: ros_robot.oms.oms_param
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.oms.servo module
+---------------------------
+
+.. automodule:: ros_robot.oms.servo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ros_robot.oms
+   :members:
+   :undoc-members:
+   :show-inheritance:

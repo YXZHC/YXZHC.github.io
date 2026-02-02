@@ -1,0 +1,53 @@
+ros\_robot.vision package
+=========================
+
+Submodules
+----------
+
+ros\_robot.vision.ball\_grabbing module
+---------------------------------------
+
+.. automodule:: ros_robot.vision.ball_grabbing
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.vision.camera module
+-------------------------------
+
+.. automodule:: ros_robot.vision.camera
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.vision.camera\_d module
+----------------------------------
+
+.. automodule:: ros_robot.vision.camera_d
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.vision.object\_3d\_extractor module
+----------------------------------------------
+
+.. automodule:: ros_robot.vision.object_3d_extractor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.vision.user\_ball\_detector module
+---------------------------------------------
+
+.. automodule:: ros_robot.vision.user_ball_detector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ros_robot.vision
+   :members:
+   :undoc-members:
+   :show-inheritance:

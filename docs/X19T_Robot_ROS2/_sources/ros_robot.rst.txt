@@ -1,0 +1,35 @@
+ros\_robot package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   ros_robot.chassis
+   ros_robot.config
+   ros_robot.navigation
+   ros_robot.oms
+   ros_robot.sensor
+   ros_robot.utils
+   ros_robot.vision
+
+Submodules
+----------
+
+ros\_robot.robotics module
+--------------------------
+
+.. automodule:: ros_robot.robotics
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ros_robot
+   :members:
+   :undoc-members:
+   :show-inheritance:
