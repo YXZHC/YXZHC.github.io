@@ -1,0 +1,53 @@
+wsc\_robotic.utils package
+==========================
+
+Submodules
+----------
+
+wsc\_robotic.utils.app\_manager module
+--------------------------------------
+
+.. automodule:: wsc_robotic.utils.app_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.utils.license\_client module
+-----------------------------------------
+
+.. automodule:: wsc_robotic.utils.license_client
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.utils.trapezoidal\_planner module
+----------------------------------------------
+
+.. automodule:: wsc_robotic.utils.trapezoidal_planner
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.utils.utils module
+-------------------------------
+
+.. automodule:: wsc_robotic.utils.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.utils.vmxpi module
+-------------------------------
+
+.. automodule:: wsc_robotic.utils.vmxpi
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: wsc_robotic.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:

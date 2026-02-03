@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wsc_robotic.sensor package &mdash; WSC_Robot_ROS2 0.0.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5a0213dc"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="wsc_robotic.user package" href="wsc_robotic.user.html" />
+    <link rel="prev" title="wsc_robotic.oms package" href="wsc_robotic.oms.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WSC_Robot_ROS2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">HB-Python-Documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">wsc_hbrobotv2_python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user.html">user package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="wsc_robotic.html">wsc_robotic package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="wsc_robotic.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html">wsc_robotic.chassis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html">wsc_robotic.navigation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html">wsc_robotic.oms package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">wsc_robotic.sensor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.user.html">wsc_robotic.user package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html">wsc_robotic.utils package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html">wsc_robotic.vision package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#module-wsc_robotic.robotics">wsc_robotic.robotics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#module-wsc_robotic">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WSC_Robot_ROS2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">wsc_hbrobotv2_python</a></li>
+          <li class="breadcrumb-item"><a href="wsc_robotic.html">wsc_robotic package</a></li>
+      <li class="breadcrumb-item active">wsc_robotic.sensor package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/wsc_robotic.sensor.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wsc-robotic-sensor-package">
+<h1>wsc_robotic.sensor package<a class="headerlink" href="#wsc-robotic-sensor-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-wsc_robotic.sensor.lidar">
+<span id="wsc-robotic-sensor-lidar-module"></span><h2>wsc_robotic.sensor.lidar module<a class="headerlink" href="#module-wsc_robotic.sensor.lidar" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.lidar.Lidar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.sensor.lidar.</span></span><span class="sig-name descname"><span class="pre">Lidar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.lidar.Lidar" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>激光传感器</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.lidar.Lidar.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.lidar.Lidar.close" title="Link to this definition"></a></dt>
+<dd><p>关闭雷达订阅</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.lidar.Lidar.get_distance">
+<span class="sig-name descname"><span class="pre">get_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.lidar.Lidar.get_distance" title="Link to this definition"></a></dt>
+<dd><p>获取指定角度就近距离m</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>angle</strong> (<em>float</em>) -- 角度</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>是否成功
+float: 距离</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.lidar.Lidar.get_lidar_val">
+<span class="sig-name descname"><span class="pre">get_lidar_val</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle_deg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.lidar.Lidar.get_lidar_val" title="Link to this definition"></a></dt>
+<dd><p>获取指定角度距离m和强度</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>angle_deg</strong> (<em>float</em>) -- 角度</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>(距离, 强度)</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.lidar.Lidar.open">
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.lidar.Lidar.open" title="Link to this definition"></a></dt>
+<dd><p>打开雷达订阅</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.lidar.Lidar.read">
+<span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.lidar.Lidar.read" title="Link to this definition"></a></dt>
+<dd><p>获取激光数据</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>是否成功
+LaserScan: 激光数据</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic.sensor.sensor">
+<span id="wsc-robotic-sensor-sensor-module"></span><h2>wsc_robotic.sensor.sensor module<a class="headerlink" href="#module-wsc_robotic.sensor.sensor" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.IR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.sensor.sensor.</span></span><span class="sig-name descname"><span class="pre">IR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor.IR" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.IR.IR0">
+<span class="sig-name descname"><span class="pre">IR0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor.IR.IR0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.IR.IR1">
+<span class="sig-name descname"><span class="pre">IR1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor.IR.IR1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.IR.IR2">
+<span class="sig-name descname"><span class="pre">IR2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor.IR.IR2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.IR.IR3">
+<span class="sig-name descname"><span class="pre">IR3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor.IR.IR3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.Sensor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.sensor.sensor.</span></span><span class="sig-name descname"><span class="pre">Sensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor.Sensor" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>传感器</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.Sensor.read_ir">
+<span class="sig-name descname"><span class="pre">read_ir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">IR.IR0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor.Sensor.read_ir" title="Link to this definition"></a></dt>
+<dd><p>获取红外测距传感器距离m(端口)</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>port</strong> (<a class="reference internal" href="#wsc_robotic.sensor.sensor.IR" title="wsc_robotic.sensor.sensor.IR"><em>IR</em></a>) -- 红外测距传感器端口</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>距离m</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.Sensor.read_lsb">
+<span class="sig-name descname"><span class="pre">read_lsb</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor.Sensor.read_lsb" title="Link to this definition"></a></dt>
+<dd><p>获取寻线传感器电压</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>寻线传感器电压</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.Sensor.read_sonar">
+<span class="sig-name descname"><span class="pre">read_sonar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Sonar.SONAR0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor.Sensor.read_sonar" title="Link to this definition"></a></dt>
+<dd><p>获取超声波传感器距离m(端口)</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>port</strong> (<a class="reference internal" href="#wsc_robotic.sensor.sensor.Sonar" title="wsc_robotic.sensor.sensor.Sonar"><em>Sonar</em></a>) -- 超声波传感器端口</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>距离m</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.Sonar">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.sensor.sensor.</span></span><span class="sig-name descname"><span class="pre">Sonar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor.Sonar" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.Sonar.SONAR0">
+<span class="sig-name descname"><span class="pre">SONAR0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor.Sonar.SONAR0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor.Sonar.SONAR1">
+<span class="sig-name descname"><span class="pre">SONAR1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor.Sonar.SONAR1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic.sensor.sensor_correct">
+<span id="wsc-robotic-sensor-sensor-correct-module"></span><h2>wsc_robotic.sensor.sensor_correct module<a class="headerlink" href="#module-wsc_robotic.sensor.sensor_correct" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.CorrectMode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.sensor.sensor_correct.</span></span><span class="sig-name descname"><span class="pre">CorrectMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.CorrectMode" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.CorrectMode.SENSOR0">
+<span class="sig-name descname"><span class="pre">SENSOR0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.CorrectMode.SENSOR0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.CorrectMode.SENSOR0_AND_SENSOR1">
+<span class="sig-name descname"><span class="pre">SENSOR0_AND_SENSOR1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.CorrectMode.SENSOR0_AND_SENSOR1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.CorrectMode.SENSOR1">
+<span class="sig-name descname"><span class="pre">SENSOR1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.CorrectMode.SENSOR1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.SensorCorrect">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.sensor.sensor_correct.</span></span><span class="sig-name descname"><span class="pre">SensorCorrect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.SensorCorrect" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>传感器校正</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.SensorCorrect.send_controls_request">
+<span class="sig-name descname"><span class="pre">send_controls_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">set_revise_x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set_x0_comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SensorType.PING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">correction_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">CorrectMode.SENSOR0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.SensorCorrect.send_controls_request" title="Link to this definition"></a></dt>
+<dd><p>发送修正控制请求</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>set_revise_x</strong> (<em>float</em>) -- x 修正设定值(cm)</p></li>
+<li><p><strong>set_x0_comp</strong> (<em>float</em>) -- yaw 传感器0补偿参数(cm)</p></li>
+<li><p><strong>sensor_type</strong> (<a class="reference internal" href="#wsc_robotic.sensor.sensor_correct.SensorType" title="wsc_robotic.sensor.sensor_correct.SensorType"><em>SensorType</em></a>) -- 传感器类型 0: ping   1: ir  2: lidar</p></li>
+<li><p><strong>correction_mode</strong> (<a class="reference internal" href="#wsc_robotic.sensor.sensor_correct.CorrectMode" title="wsc_robotic.sensor.sensor_correct.CorrectMode"><em>CorrectMode</em></a>) -- 修正模式   0:传感器0  1:传感器1  2:传感器0 &amp;&amp; 1</p></li>
+<li><p><strong>start</strong> (<em>bool</em>) -- 启动标志  // true:启动修正  false:查询状态</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>success, err_data  # success, err_data 0:成功  -1 : ping端口选择错误, -2 : ir端口选择错误 , -3 : 传感器类型错误 , -101 :安全控制触发(急停) , -102 : 未知错误</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool, int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.SensorCorrect.wait_finished">
+<span class="sig-name descname"><span class="pre">wait_finished</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.SensorCorrect.wait_finished" title="Link to this definition"></a></dt>
+<dd><p>等待修正结束</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.SensorType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.sensor.sensor_correct.</span></span><span class="sig-name descname"><span class="pre">SensorType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.SensorType" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.SensorType.IR">
+<span class="sig-name descname"><span class="pre">IR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.SensorType.IR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.SensorType.LIDAR">
+<span class="sig-name descname"><span class="pre">LIDAR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.SensorType.LIDAR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.sensor.sensor_correct.SensorType.PING">
+<span class="sig-name descname"><span class="pre">PING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.sensor.sensor_correct.SensorType.PING" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic.sensor">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-wsc_robotic.sensor" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="wsc_robotic.oms.html" class="btn btn-neutral float-left" title="wsc_robotic.oms package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="wsc_robotic.user.html" class="btn btn-neutral float-right" title="wsc_robotic.user package" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, Zhang Chao.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wsc_robotic.chassis package &mdash; WSC_Robot_ROS2 0.0.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5a0213dc"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="wsc_robotic.navigation package" href="wsc_robotic.navigation.html" />
+    <link rel="prev" title="wsc_robotic package" href="wsc_robotic.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WSC_Robot_ROS2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">HB-Python-Documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">wsc_hbrobotv2_python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user.html">user package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="wsc_robotic.html">wsc_robotic package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="wsc_robotic.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">wsc_robotic.chassis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html">wsc_robotic.navigation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html">wsc_robotic.oms package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html">wsc_robotic.sensor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.user.html">wsc_robotic.user package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html">wsc_robotic.utils package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html">wsc_robotic.vision package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#module-wsc_robotic.robotics">wsc_robotic.robotics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#module-wsc_robotic">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WSC_Robot_ROS2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">wsc_hbrobotv2_python</a></li>
+          <li class="breadcrumb-item"><a href="wsc_robotic.html">wsc_robotic package</a></li>
+      <li class="breadcrumb-item active">wsc_robotic.chassis package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/wsc_robotic.chassis.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wsc-robotic-chassis-package">
+<h1>wsc_robotic.chassis package<a class="headerlink" href="#wsc-robotic-chassis-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-wsc_robotic.chassis.chassis">
+<span id="wsc-robotic-chassis-chassis-module"></span><h2>wsc_robotic.chassis.chassis module<a class="headerlink" href="#module-wsc_robotic.chassis.chassis" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.chassis.chassis.</span></span><span class="sig-name descname"><span class="pre">Chassis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>底盘</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis.destory">
+<span class="sig-name descname"><span class="pre">destory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis.destory" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis.get_battery_vol">
+<span class="sig-name descname"><span class="pre">get_battery_vol</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis.get_battery_vol" title="Link to this definition"></a></dt>
+<dd><p>获取电量</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>电量</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis.get_emg_status">
+<span class="sig-name descname"><span class="pre">get_emg_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis.get_emg_status" title="Link to this definition"></a></dt>
+<dd><p>获取急停状态</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>True为急停, False为正常</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis.get_odometry">
+<span class="sig-name descname"><span class="pre">get_odometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OdomType.USER</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis.get_odometry" title="Link to this definition"></a></dt>
+<dd><p>获取Odometry数据</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>type</strong> (<a class="reference internal" href="#wsc_robotic.chassis.chassis.OdomType" title="wsc_robotic.chassis.chassis.OdomType"><em>OdomType</em></a>) -- 默认为[OdomType.DEFAULT], 用户自定义为[OdomType.USER]</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>[x, y, yaw]</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis.init_odometry">
+<span class="sig-name descname"><span class="pre">init_odometry</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[0.0,</span> <span class="pre">0.0,</span> <span class="pre">0.0]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OdomClearMode.CLEAR_ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OdomType.USER</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis.init_odometry" title="Link to this definition"></a></dt>
+<dd><p>初始化机器人位置</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pose</strong> (<em>list</em>) -- [x, y, yaw]</p></li>
+<li><p><strong>mode</strong> (<a class="reference internal" href="#wsc_robotic.chassis.chassis.OdomClearMode" title="wsc_robotic.chassis.chassis.OdomClearMode"><em>OdomClearMode</em></a>) -- 默认为[OdomClearMode.CLEAR_ALL]</p></li>
+<li><p><strong>type</strong> (<a class="reference internal" href="#wsc_robotic.chassis.chassis.OdomType" title="wsc_robotic.chassis.chassis.OdomType"><em>OdomType</em></a>) -- 默认为[OdomType.USER]</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>True为成功, False为失败</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis.quaternion_to_euler">
+<span class="sig-name descname"><span class="pre">quaternion_to_euler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis.quaternion_to_euler" title="Link to this definition"></a></dt>
+<dd><p>四元数转欧拉角</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em>) -- 四元数x</p></li>
+<li><p><strong>y</strong> (<em>float</em>) -- 四元数y</p></li>
+<li><p><strong>z</strong> (<em>float</em>) -- 四元数z</p></li>
+<li><p><strong>w</strong> (<em>float</em>) -- 四元数w</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>(roll, pitch, yaw) 弧度</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis.set_cmdvel">
+<span class="sig-name descname"><span class="pre">set_cmdvel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis.set_cmdvel" title="Link to this definition"></a></dt>
+<dd><p>发布自动速度</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em>) -- x轴速度 m/s</p></li>
+<li><p><strong>y</strong> (<em>float</em>) -- y轴速度 m/s</p></li>
+<li><p><strong>theta</strong> (<em>float</em>) -- 角速度 rad/s</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis.set_ctrl_mode">
+<span class="sig-name descname"><span class="pre">set_ctrl_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ChassisMode.AUTO</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis.set_ctrl_mode" title="Link to this definition"></a></dt>
+<dd><p>设置控制模式</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mode</strong> (<a class="reference internal" href="#wsc_robotic.chassis.chassis.ChassisMode" title="wsc_robotic.chassis.chassis.ChassisMode"><em>ChassisMode</em></a>) -- 默认为[ChassisMode.AUTO], 手动模式为[ChassisMode.MANUAL]</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>True为成功, False为失败</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.Chassis.set_manual_vel">
+<span class="sig-name descname"><span class="pre">set_manual_vel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.Chassis.set_manual_vel" title="Link to this definition"></a></dt>
+<dd><p>发布手动速度</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em>) -- x轴速度 m/s</p></li>
+<li><p><strong>y</strong> (<em>float</em>) -- y轴速度 m/s</p></li>
+<li><p><strong>theta</strong> (<em>float</em>) -- 角速度 rad/s</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.ChassisMode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.chassis.chassis.</span></span><span class="sig-name descname"><span class="pre">ChassisMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.ChassisMode" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.ChassisMode.AUTO">
+<span class="sig-name descname"><span class="pre">AUTO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.chassis.chassis.ChassisMode.AUTO" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.ChassisMode.MANUAL">
+<span class="sig-name descname"><span class="pre">MANUAL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.chassis.chassis.ChassisMode.MANUAL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.OdomClearMode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.chassis.chassis.</span></span><span class="sig-name descname"><span class="pre">OdomClearMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.OdomClearMode" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.OdomClearMode.CLEAR_ALL">
+<span class="sig-name descname"><span class="pre">CLEAR_ALL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.chassis.chassis.OdomClearMode.CLEAR_ALL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.OdomClearMode.CLEAR_POSE">
+<span class="sig-name descname"><span class="pre">CLEAR_POSE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.chassis.chassis.OdomClearMode.CLEAR_POSE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.OdomClearMode.CLEAR_YAW">
+<span class="sig-name descname"><span class="pre">CLEAR_YAW</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#wsc_robotic.chassis.chassis.OdomClearMode.CLEAR_YAW" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.OdomType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.chassis.chassis.</span></span><span class="sig-name descname"><span class="pre">OdomType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.chassis.OdomType" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.OdomType.DEFAULT">
+<span class="sig-name descname"><span class="pre">DEFAULT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.chassis.chassis.OdomType.DEFAULT" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.chassis.OdomType.USER">
+<span class="sig-name descname"><span class="pre">USER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.chassis.chassis.OdomType.USER" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic.chassis.io">
+<span id="wsc-robotic-chassis-io-module"></span><h2>wsc_robotic.chassis.io module<a class="headerlink" href="#module-wsc_robotic.chassis.io" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.AiPort">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.chassis.io.</span></span><span class="sig-name descname"><span class="pre">AiPort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.io.AiPort" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.AiPort.AI0">
+<span class="sig-name descname"><span class="pre">AI0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.chassis.io.AiPort.AI0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.AiPort.AI1">
+<span class="sig-name descname"><span class="pre">AI1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.chassis.io.AiPort.AI1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.AiPort.AI2">
+<span class="sig-name descname"><span class="pre">AI2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#wsc_robotic.chassis.io.AiPort.AI2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.AiPort.AI3">
+<span class="sig-name descname"><span class="pre">AI3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#wsc_robotic.chassis.io.AiPort.AI3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.DiPort">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.chassis.io.</span></span><span class="sig-name descname"><span class="pre">DiPort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.io.DiPort" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.DiPort.DI0">
+<span class="sig-name descname"><span class="pre">DI0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.chassis.io.DiPort.DI0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.DiPort.DI1">
+<span class="sig-name descname"><span class="pre">DI1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.chassis.io.DiPort.DI1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.DoPort">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.chassis.io.</span></span><span class="sig-name descname"><span class="pre">DoPort</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.io.DoPort" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.DoPort.DO0">
+<span class="sig-name descname"><span class="pre">DO0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.chassis.io.DoPort.DO0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.DoPort.DO1">
+<span class="sig-name descname"><span class="pre">DO1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.chassis.io.DoPort.DO1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.DoPort.DO2">
+<span class="sig-name descname"><span class="pre">DO2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#wsc_robotic.chassis.io.DoPort.DO2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.IO">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.chassis.io.</span></span><span class="sig-name descname"><span class="pre">IO</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.io.IO" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>IO接口</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.IO.read_ai">
+<span class="sig-name descname"><span class="pre">read_ai</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">AiPort.AI0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.io.IO.read_ai" title="Link to this definition"></a></dt>
+<dd><p>读取AI</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>port</strong> (<a class="reference internal" href="#wsc_robotic.chassis.io.AiPort" title="wsc_robotic.chassis.io.AiPort"><em>AiPort</em></a><em>, </em><em>optional</em>) -- AI端口. Defaults to AiPort.AI0.</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>模拟电压v</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.IO.read_button">
+<span class="sig-name descname"><span class="pre">read_button</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.io.IO.read_button" title="Link to this definition"></a></dt>
+<dd><p>读取按键</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>按键状态</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.IO.read_di">
+<span class="sig-name descname"><span class="pre">read_di</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DiPort.DI1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.io.IO.read_di" title="Link to this definition"></a></dt>
+<dd><p>读取DI</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>port</strong> (<a class="reference internal" href="#wsc_robotic.chassis.io.DiPort" title="wsc_robotic.chassis.io.DiPort"><em>DiPort</em></a><em>, </em><em>optional</em>) -- DI端口. Defaults to DiPort.DI1.</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>电平</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.IO.set_do">
+<span class="sig-name descname"><span class="pre">set_do</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DoPort.DO0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.io.IO.set_do" title="Link to this definition"></a></dt>
+<dd><p>设置数字输出</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>port</strong> (<a class="reference internal" href="#wsc_robotic.chassis.io.DoPort" title="wsc_robotic.chassis.io.DoPort"><em>DoPort</em></a><em>, </em><em>optional</em>) -- DO端口. Defaults to DoPort.DO0.</p></li>
+<li><p><strong>state</strong> (<em>bool</em><em>, </em><em>optional</em>) -- 电平. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.chassis.io.IO.set_led">
+<span class="sig-name descname"><span class="pre">set_led</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.chassis.io.IO.set_led" title="Link to this definition"></a></dt>
+<dd><p>设置LED灯</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>state</strong> (<em>bool</em><em>, </em><em>optional</em>) -- 电平. Defaults to False.</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic.chassis">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-wsc_robotic.chassis" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="wsc_robotic.html" class="btn btn-neutral float-left" title="wsc_robotic package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="wsc_robotic.navigation.html" class="btn btn-neutral float-right" title="wsc_robotic.navigation package" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, Zhang Chao.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

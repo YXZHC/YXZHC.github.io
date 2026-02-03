@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wsc_robotic.navigation package &mdash; WSC_Robot_ROS2 0.0.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5a0213dc"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="wsc_robotic.oms package" href="wsc_robotic.oms.html" />
+    <link rel="prev" title="wsc_robotic.chassis package" href="wsc_robotic.chassis.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WSC_Robot_ROS2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">HB-Python-Documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">wsc_hbrobotv2_python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user.html">user package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="wsc_robotic.html">wsc_robotic package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="wsc_robotic.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html">wsc_robotic.chassis package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">wsc_robotic.navigation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html">wsc_robotic.oms package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html">wsc_robotic.sensor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.user.html">wsc_robotic.user package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html">wsc_robotic.utils package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html">wsc_robotic.vision package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#module-wsc_robotic.robotics">wsc_robotic.robotics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#module-wsc_robotic">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WSC_Robot_ROS2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">wsc_hbrobotv2_python</a></li>
+          <li class="breadcrumb-item"><a href="wsc_robotic.html">wsc_robotic package</a></li>
+      <li class="breadcrumb-item active">wsc_robotic.navigation package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/wsc_robotic.navigation.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wsc-robotic-navigation-package">
+<h1>wsc_robotic.navigation package<a class="headerlink" href="#wsc-robotic-navigation-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-wsc_robotic.navigation.base_motion_kit">
+<span id="wsc-robotic-navigation-base-motion-kit-module"></span><h2>wsc_robotic.navigation.base_motion_kit module<a class="headerlink" href="#module-wsc_robotic.navigation.base_motion_kit" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.navigation.base_motion_kit.</span></span><span class="sig-name descname"><span class="pre">BaseMotionKit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>基础运动驱动器套件</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.cancel">
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.cancel" title="Link to this definition"></a></dt>
+<dd><p>取消导航</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.get_feedback">
+<span class="sig-name descname"><span class="pre">get_feedback</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.get_feedback" title="Link to this definition"></a></dt>
+<dd><p>获取反馈</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>反馈</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback" title="wsc_robotic.navigation.base_motion_kit.PTPFeedback">PTPFeedback</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.is_moving">
+<span class="sig-name descname"><span class="pre">is_moving</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.is_moving" title="Link to this definition"></a></dt>
+<dd><p>获取导航状态</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>True:正在导航 False:导航结束</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_diff_follow_param">
+<span class="sig-name descname"><span class="pre">set_diff_follow_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Pose2D</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">final_heading</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">back</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">DiffFollowParam(linear_vel=0.5,</span> <span class="pre">angular_vel=3.0,</span> <span class="pre">rotate_acc=3.0,</span> <span class="pre">rotate_decel=3.0)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_diff_follow_param" title="Link to this definition"></a></dt>
+<dd><p>设置差速跟随驱动器参数</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>list</em><em>[</em><em>Pose2D</em><em>]</em>) -- 轨迹点</p></li>
+<li><p><strong>final_heading</strong> (<em>float</em>) -- 最终朝向</p></li>
+<li><p><strong>back</strong> (<em>bool</em>) -- 是否倒退</p></li>
+<li><p><strong>param</strong> (<a class="reference internal" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowParam" title="wsc_robotic.navigation.base_motion_kit.DiffFollowParam"><em>DiffFollowParam</em></a>) -- 参数</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_line_driver_param">
+<span class="sig-name descname"><span class="pre">set_line_driver_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.75</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_line_driver_param" title="Link to this definition"></a></dt>
+<dd><p>设置直线运动参数</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>distance</strong> (<em>float</em>) -- 距离</p></li>
+<li><p><strong>vel</strong> (<em>float</em>) -- 线速度</p></li>
+<li><p><strong>acc</strong> (<em>float</em>) -- 加速度</p></li>
+<li><p><strong>decel</strong> (<em>float</em>) -- 减速度</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_omni_wheel_param">
+<span class="sig-name descname"><span class="pre">set_omni_wheel_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Pose2D</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam" title="wsc_robotic.navigation.base_motion_kit.OmniWheelParam"><span class="pre">OmniWheelParam</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OmniWheelParam(velocity_x=0.6,</span> <span class="pre">velocity_y=0.58,</span> <span class="pre">velocity_w=3.0,</span> <span class="pre">start_tacc=0.3,</span> <span class="pre">middle_tacc=0.3,</span> <span class="pre">end_tacc=0.3,</span> <span class="pre">start_tacc_w=0.5,</span> <span class="pre">end_tacc_w=0.5,</span> <span class="pre">sync_rotate=True)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_omni_wheel_param" title="Link to this definition"></a></dt>
+<dd><p>设置OmniWheel驱动器参数</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>list</em><em>[</em><em>Pose2D</em><em>]</em>) -- 轨迹点</p></li>
+<li><p><strong>param</strong> (<a class="reference internal" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam" title="wsc_robotic.navigation.base_motion_kit.OmniWheelParam"><em>OmniWheelParam</em></a>) -- 参数</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_ptp_driver_param">
+<span class="sig-name descname"><span class="pre">set_ptp_driver_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Pose2D</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">final_heading</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">back</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">PTPParam(linear_vel=0.5,</span> <span class="pre">angular_vel=3.0,</span> <span class="pre">linear_acc=10.0,</span> <span class="pre">linear_decel=10.0,</span> <span class="pre">rotate_acc=3.0,</span> <span class="pre">rotate_decel=3.0)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_ptp_driver_param" title="Link to this definition"></a></dt>
+<dd><p>设置点至点驱动器参数</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>list</em><em>[</em><em>Pose2D</em><em>]</em>) -- 轨迹点</p></li>
+<li><p><strong>final_heading</strong> (<em>float</em>) -- 终点朝向</p></li>
+<li><p><strong>back</strong> (<em>bool</em>) -- 是否倒退</p></li>
+<li><p><strong>param</strong> (<a class="reference internal" href="#wsc_robotic.navigation.base_motion_kit.PTPParam" title="wsc_robotic.navigation.base_motion_kit.PTPParam"><em>PTPParam</em></a>) -- 参数</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_rotate_driver_param">
+<span class="sig-name descname"><span class="pre">set_rotate_driver_param</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">120.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">300.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_rotate_driver_param" title="Link to this definition"></a></dt>
+<dd><p>设置旋转运动参数</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>angle</strong> (<em>float</em>) -- 旋转角度</p></li>
+<li><p><strong>vel</strong> (<em>float</em>) -- 旋转速度</p></li>
+<li><p><strong>acc</strong> (<em>float</em>) -- 加速度</p></li>
+<li><p><strong>decel</strong> (<em>float</em>) -- 减速度</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.start" title="Link to this definition"></a></dt>
+<dd><p>启动</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>True:启动成功 False:启动失败</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.BaseMotionKit.wait_finished">
+<span class="sig-name descname"><span class="pre">wait_finished</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.wait_finished" title="Link to this definition"></a></dt>
+<dd><p>等待导航结束</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.navigation.base_motion_kit.</span></span><span class="sig-name descname"><span class="pre">DiffFollowFeedback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curr_ld</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.curr_ld">
+<span class="sig-name descname"><span class="pre">curr_ld</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.curr_ld" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.distance">
+<span class="sig-name descname"><span class="pre">distance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.distance" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.from_json">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback" title="wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback"><span class="pre">DiffFollowFeedback</span></a></span></span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.from_json" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.point_idx">
+<span class="sig-name descname"><span class="pre">point_idx</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.point_idx" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowParam">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.navigation.base_motion_kit.</span></span><span class="sig-name descname"><span class="pre">DiffFollowParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">linear_vel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angular_vel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotate_acc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotate_decel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowParam" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowParam.angular_vel">
+<span class="sig-name descname"><span class="pre">angular_vel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3.0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowParam.angular_vel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowParam.linear_vel">
+<span class="sig-name descname"><span class="pre">linear_vel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowParam.linear_vel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowParam.rotate_acc">
+<span class="sig-name descname"><span class="pre">rotate_acc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3.0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowParam.rotate_acc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DiffFollowParam.rotate_decel">
+<span class="sig-name descname"><span class="pre">rotate_decel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3.0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DiffFollowParam.rotate_decel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DriverType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.navigation.base_motion_kit.</span></span><span class="sig-name descname"><span class="pre">DriverType</span></span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DriverType" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DriverType.BASIC_LINEAR_MOTION">
+<span class="sig-name descname"><span class="pre">BASIC_LINEAR_MOTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DriverType.BASIC_LINEAR_MOTION" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DriverType.BASIC_ROTATIONAL_MOTION">
+<span class="sig-name descname"><span class="pre">BASIC_ROTATIONAL_MOTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DriverType.BASIC_ROTATIONAL_MOTION" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DriverType.DIFFERENTIAL_FOLLOW_MOTION">
+<span class="sig-name descname"><span class="pre">DIFFERENTIAL_FOLLOW_MOTION</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DriverType.DIFFERENTIAL_FOLLOW_MOTION" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DriverType.DIFFERENTIAL_PTP">
+<span class="sig-name descname"><span class="pre">DIFFERENTIAL_PTP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DriverType.DIFFERENTIAL_PTP" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.DriverType.OMNI_WHEEL_DRIVER">
+<span class="sig-name descname"><span class="pre">OMNI_WHEEL_DRIVER</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.DriverType.OMNI_WHEEL_DRIVER" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.navigation.base_motion_kit.</span></span><span class="sig-name descname"><span class="pre">OmniWheelFeedback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pointX</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointY</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointW</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pointIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeEnd</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">currTime</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.currTime">
+<span class="sig-name descname"><span class="pre">currTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.currTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.from_json">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback" title="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback"><span class="pre">OmniWheelFeedback</span></a></span></span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.from_json" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pathTime">
+<span class="sig-name descname"><span class="pre">pathTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pathTime" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointIndex">
+<span class="sig-name descname"><span class="pre">pointIndex</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointIndex" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointW">
+<span class="sig-name descname"><span class="pre">pointW</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointW" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointX">
+<span class="sig-name descname"><span class="pre">pointX</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointX" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointY">
+<span class="sig-name descname"><span class="pre">pointY</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointY" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.segIndex">
+<span class="sig-name descname"><span class="pre">segIndex</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.segIndex" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.timeEnd">
+<span class="sig-name descname"><span class="pre">timeEnd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.timeEnd" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.navigation.base_motion_kit.</span></span><span class="sig-name descname"><span class="pre">OmniWheelParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">velocity_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">velocity_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.58</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">velocity_w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_tacc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">middle_tacc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_tacc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_tacc_w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_tacc_w</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync_rotate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam.end_tacc">
+<span class="sig-name descname"><span class="pre">end_tacc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.3</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.end_tacc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam.end_tacc_w">
+<span class="sig-name descname"><span class="pre">end_tacc_w</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.end_tacc_w" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam.middle_tacc">
+<span class="sig-name descname"><span class="pre">middle_tacc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.3</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.middle_tacc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam.start_tacc">
+<span class="sig-name descname"><span class="pre">start_tacc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.3</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.start_tacc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam.start_tacc_w">
+<span class="sig-name descname"><span class="pre">start_tacc_w</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.start_tacc_w" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam.sync_rotate">
+<span class="sig-name descname"><span class="pre">sync_rotate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.sync_rotate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam.velocity_w">
+<span class="sig-name descname"><span class="pre">velocity_w</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3.0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.velocity_w" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam.velocity_x">
+<span class="sig-name descname"><span class="pre">velocity_x</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.6</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.velocity_x" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.OmniWheelParam.velocity_y">
+<span class="sig-name descname"><span class="pre">velocity_y</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.58</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.velocity_y" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPFeedback">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.navigation.base_motion_kit.</span></span><span class="sig-name descname"><span class="pre">PTPFeedback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curr_point_index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curr_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">curr_total_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">goal_rotate_final</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPFeedback.curr_point_index">
+<span class="sig-name descname"><span class="pre">curr_point_index</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback.curr_point_index" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPFeedback.curr_time">
+<span class="sig-name descname"><span class="pre">curr_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback.curr_time" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPFeedback.curr_total_time">
+<span class="sig-name descname"><span class="pre">curr_total_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback.curr_total_time" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPFeedback.from_json">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback" title="wsc_robotic.navigation.base_motion_kit.PTPFeedback"><span class="pre">PTPFeedback</span></a></span></span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback.from_json" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPFeedback.goal_rotate_final">
+<span class="sig-name descname"><span class="pre">goal_rotate_final</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback.goal_rotate_final" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPFeedback.point_size">
+<span class="sig-name descname"><span class="pre">point_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback.point_size" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPFeedback.state">
+<span class="sig-name descname"><span class="pre">state</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPFeedback.state" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPParam">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.navigation.base_motion_kit.</span></span><span class="sig-name descname"><span class="pre">PTPParam</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">linear_vel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angular_vel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linear_acc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linear_decel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotate_acc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotate_decel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPParam" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPParam.angular_vel">
+<span class="sig-name descname"><span class="pre">angular_vel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3.0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPParam.angular_vel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPParam.linear_acc">
+<span class="sig-name descname"><span class="pre">linear_acc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10.0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPParam.linear_acc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPParam.linear_decel">
+<span class="sig-name descname"><span class="pre">linear_decel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10.0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPParam.linear_decel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPParam.linear_vel">
+<span class="sig-name descname"><span class="pre">linear_vel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPParam.linear_vel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPParam.rotate_acc">
+<span class="sig-name descname"><span class="pre">rotate_acc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3.0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPParam.rotate_acc" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.navigation.base_motion_kit.PTPParam.rotate_decel">
+<span class="sig-name descname"><span class="pre">rotate_decel</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3.0</span></em><a class="headerlink" href="#wsc_robotic.navigation.base_motion_kit.PTPParam.rotate_decel" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic.navigation">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-wsc_robotic.navigation" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="wsc_robotic.chassis.html" class="btn btn-neutral float-left" title="wsc_robotic.chassis package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="wsc_robotic.oms.html" class="btn btn-neutral float-right" title="wsc_robotic.oms package" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, Zhang Chao.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

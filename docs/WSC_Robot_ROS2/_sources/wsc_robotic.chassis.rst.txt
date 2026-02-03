@@ -1,0 +1,29 @@
+wsc\_robotic.chassis package
+============================
+
+Submodules
+----------
+
+wsc\_robotic.chassis.chassis module
+-----------------------------------
+
+.. automodule:: wsc_robotic.chassis.chassis
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.chassis.io module
+------------------------------
+
+.. automodule:: wsc_robotic.chassis.io
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: wsc_robotic.chassis
+   :members:
+   :undoc-members:
+   :show-inheritance:

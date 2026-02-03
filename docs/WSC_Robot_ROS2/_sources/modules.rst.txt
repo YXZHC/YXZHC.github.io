@@ -1,0 +1,9 @@
+wsc_hbrobotv2_python
+====================
+
+.. toctree::
+   :maxdepth: 4
+
+   tools
+   user
+   wsc_robotic

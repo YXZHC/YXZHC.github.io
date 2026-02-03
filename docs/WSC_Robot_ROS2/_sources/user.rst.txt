@@ -1,0 +1,37 @@
+user package
+============
+
+Submodules
+----------
+
+user.Task\_BJCP\_260120 module
+------------------------------
+
+.. automodule:: user.Task_BJCP_260120
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+user.test module
+----------------
+
+.. automodule:: user.test
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+user.test\_冷启动 module
+------------------------
+
+.. automodule:: user.test_冷启动
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: user
+   :members:
+   :undoc-members:
+   :show-inheritance:

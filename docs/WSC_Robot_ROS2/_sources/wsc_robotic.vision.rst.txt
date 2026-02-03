@@ -1,0 +1,45 @@
+wsc\_robotic.vision package
+===========================
+
+Submodules
+----------
+
+wsc\_robotic.vision.camera module
+---------------------------------
+
+.. automodule:: wsc_robotic.vision.camera
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.vision.mnn\_detector module
+----------------------------------------
+
+.. automodule:: wsc_robotic.vision.mnn_detector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.vision.object\_3d\_extractor module
+------------------------------------------------
+
+.. automodule:: wsc_robotic.vision.object_3d_extractor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.vision.user\_mnn\_detector module
+----------------------------------------------
+
+.. automodule:: wsc_robotic.vision.user_mnn_detector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: wsc_robotic.vision
+   :members:
+   :undoc-members:
+   :show-inheritance:

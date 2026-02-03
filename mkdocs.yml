@@ -28,6 +28,9 @@ nav:
   - Home:
     - Home: index.md
 
+  - WSC_Robot_ROS2:
+    - WSC_Robot_ROS2: WSC_Robot_ROS2/index.html
+
   - X19T_Robot_ROS2:
     - X19T_Robot_ROS2: X19T_Robot_ROS2/index.html
 

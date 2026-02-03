@@ -1,0 +1,37 @@
+wsc\_robotic.sensor package
+===========================
+
+Submodules
+----------
+
+wsc\_robotic.sensor.lidar module
+--------------------------------
+
+.. automodule:: wsc_robotic.sensor.lidar
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.sensor.sensor module
+---------------------------------
+
+.. automodule:: wsc_robotic.sensor.sensor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.sensor.sensor\_correct module
+------------------------------------------
+
+.. automodule:: wsc_robotic.sensor.sensor_correct
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: wsc_robotic.sensor
+   :members:
+   :undoc-members:
+   :show-inheritance:

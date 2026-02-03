@@ -1,0 +1,667 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wsc_robotic package &mdash; WSC_Robot_ROS2 0.0.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5a0213dc"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="wsc_robotic.chassis package" href="wsc_robotic.chassis.html" />
+    <link rel="prev" title="user package" href="user.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WSC_Robot_ROS2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">HB-Python-Documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">wsc_hbrobotv2_python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user.html">user package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">wsc_robotic package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html">wsc_robotic.chassis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html">wsc_robotic.navigation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html">wsc_robotic.oms package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html">wsc_robotic.sensor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.user.html">wsc_robotic.user package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html">wsc_robotic.utils package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html">wsc_robotic.vision package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wsc_robotic.robotics">wsc_robotic.robotics module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#wsc_robotic.robotics.Robotics"><code class="docutils literal notranslate"><span class="pre">Robotics</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-wsc_robotic">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WSC_Robot_ROS2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">wsc_hbrobotv2_python</a></li>
+      <li class="breadcrumb-item active">wsc_robotic package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/wsc_robotic.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wsc-robotic-package">
+<h1>wsc_robotic package<a class="headerlink" href="#wsc-robotic-package" title="Link to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="wsc_robotic.chassis.html">wsc_robotic.chassis package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.chassis.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.chassis.html#module-wsc_robotic.chassis.chassis">wsc_robotic.chassis.chassis module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis"><code class="docutils literal notranslate"><span class="pre">Chassis</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis.destory"><code class="docutils literal notranslate"><span class="pre">Chassis.destory()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis.get_battery_vol"><code class="docutils literal notranslate"><span class="pre">Chassis.get_battery_vol()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis.get_emg_status"><code class="docutils literal notranslate"><span class="pre">Chassis.get_emg_status()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis.get_odometry"><code class="docutils literal notranslate"><span class="pre">Chassis.get_odometry()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis.init_odometry"><code class="docutils literal notranslate"><span class="pre">Chassis.init_odometry()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis.quaternion_to_euler"><code class="docutils literal notranslate"><span class="pre">Chassis.quaternion_to_euler()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis.set_cmdvel"><code class="docutils literal notranslate"><span class="pre">Chassis.set_cmdvel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis.set_ctrl_mode"><code class="docutils literal notranslate"><span class="pre">Chassis.set_ctrl_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.Chassis.set_manual_vel"><code class="docutils literal notranslate"><span class="pre">Chassis.set_manual_vel()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.ChassisMode"><code class="docutils literal notranslate"><span class="pre">ChassisMode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.ChassisMode.AUTO"><code class="docutils literal notranslate"><span class="pre">ChassisMode.AUTO</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.ChassisMode.MANUAL"><code class="docutils literal notranslate"><span class="pre">ChassisMode.MANUAL</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.OdomClearMode"><code class="docutils literal notranslate"><span class="pre">OdomClearMode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.OdomClearMode.CLEAR_ALL"><code class="docutils literal notranslate"><span class="pre">OdomClearMode.CLEAR_ALL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.OdomClearMode.CLEAR_POSE"><code class="docutils literal notranslate"><span class="pre">OdomClearMode.CLEAR_POSE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.OdomClearMode.CLEAR_YAW"><code class="docutils literal notranslate"><span class="pre">OdomClearMode.CLEAR_YAW</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.OdomType"><code class="docutils literal notranslate"><span class="pre">OdomType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.OdomType.DEFAULT"><code class="docutils literal notranslate"><span class="pre">OdomType.DEFAULT</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.chassis.OdomType.USER"><code class="docutils literal notranslate"><span class="pre">OdomType.USER</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.chassis.html#module-wsc_robotic.chassis.io">wsc_robotic.chassis.io module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.AiPort"><code class="docutils literal notranslate"><span class="pre">AiPort</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.AiPort.AI0"><code class="docutils literal notranslate"><span class="pre">AiPort.AI0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.AiPort.AI1"><code class="docutils literal notranslate"><span class="pre">AiPort.AI1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.AiPort.AI2"><code class="docutils literal notranslate"><span class="pre">AiPort.AI2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.AiPort.AI3"><code class="docutils literal notranslate"><span class="pre">AiPort.AI3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.DiPort"><code class="docutils literal notranslate"><span class="pre">DiPort</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.DiPort.DI0"><code class="docutils literal notranslate"><span class="pre">DiPort.DI0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.DiPort.DI1"><code class="docutils literal notranslate"><span class="pre">DiPort.DI1</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.DoPort"><code class="docutils literal notranslate"><span class="pre">DoPort</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.DoPort.DO0"><code class="docutils literal notranslate"><span class="pre">DoPort.DO0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.DoPort.DO1"><code class="docutils literal notranslate"><span class="pre">DoPort.DO1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.DoPort.DO2"><code class="docutils literal notranslate"><span class="pre">DoPort.DO2</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.IO"><code class="docutils literal notranslate"><span class="pre">IO</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.IO.read_ai"><code class="docutils literal notranslate"><span class="pre">IO.read_ai()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.IO.read_button"><code class="docutils literal notranslate"><span class="pre">IO.read_button()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.IO.read_di"><code class="docutils literal notranslate"><span class="pre">IO.read_di()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.IO.set_do"><code class="docutils literal notranslate"><span class="pre">IO.set_do()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html#wsc_robotic.chassis.io.IO.set_led"><code class="docutils literal notranslate"><span class="pre">IO.set_led()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.chassis.html#module-wsc_robotic.chassis">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wsc_robotic.navigation.html">wsc_robotic.navigation package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.navigation.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.navigation.html#module-wsc_robotic.navigation.base_motion_kit">wsc_robotic.navigation.base_motion_kit module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.cancel"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.cancel()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.get_feedback"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.get_feedback()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.is_moving"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.is_moving()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_diff_follow_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_diff_follow_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_line_driver_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_line_driver_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_omni_wheel_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_omni_wheel_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_ptp_driver_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_ptp_driver_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.set_rotate_driver_param"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.set_rotate_driver_param()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.start"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.start()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.BaseMotionKit.wait_finished"><code class="docutils literal notranslate"><span class="pre">BaseMotionKit.wait_finished()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.curr_ld"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback.curr_ld</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.distance"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback.distance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.from_json"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback.from_json()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowFeedback.point_idx"><code class="docutils literal notranslate"><span class="pre">DiffFollowFeedback.point_idx</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowParam"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowParam.angular_vel"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam.angular_vel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowParam.linear_vel"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam.linear_vel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowParam.rotate_acc"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam.rotate_acc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DiffFollowParam.rotate_decel"><code class="docutils literal notranslate"><span class="pre">DiffFollowParam.rotate_decel</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DriverType"><code class="docutils literal notranslate"><span class="pre">DriverType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DriverType.BASIC_LINEAR_MOTION"><code class="docutils literal notranslate"><span class="pre">DriverType.BASIC_LINEAR_MOTION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DriverType.BASIC_ROTATIONAL_MOTION"><code class="docutils literal notranslate"><span class="pre">DriverType.BASIC_ROTATIONAL_MOTION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DriverType.DIFFERENTIAL_FOLLOW_MOTION"><code class="docutils literal notranslate"><span class="pre">DriverType.DIFFERENTIAL_FOLLOW_MOTION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DriverType.DIFFERENTIAL_PTP"><code class="docutils literal notranslate"><span class="pre">DriverType.DIFFERENTIAL_PTP</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.DriverType.OMNI_WHEEL_DRIVER"><code class="docutils literal notranslate"><span class="pre">DriverType.OMNI_WHEEL_DRIVER</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.currTime"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.currTime</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.from_json"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.from_json()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pathTime"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pathTime</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointIndex"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pointIndex</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointW"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pointW</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointX"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pointX</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.pointY"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.pointY</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.segIndex"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.segIndex</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelFeedback.timeEnd"><code class="docutils literal notranslate"><span class="pre">OmniWheelFeedback.timeEnd</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.end_tacc"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.end_tacc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.end_tacc_w"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.end_tacc_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.middle_tacc"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.middle_tacc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.start_tacc"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.start_tacc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.start_tacc_w"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.start_tacc_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.sync_rotate"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.sync_rotate</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.velocity_w"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.velocity_w</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.velocity_x"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.velocity_x</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.OmniWheelParam.velocity_y"><code class="docutils literal notranslate"><span class="pre">OmniWheelParam.velocity_y</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPFeedback"><code class="docutils literal notranslate"><span class="pre">PTPFeedback</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPFeedback.curr_point_index"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.curr_point_index</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPFeedback.curr_time"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.curr_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPFeedback.curr_total_time"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.curr_total_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPFeedback.from_json"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.from_json()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPFeedback.goal_rotate_final"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.goal_rotate_final</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPFeedback.point_size"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.point_size</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPFeedback.state"><code class="docutils literal notranslate"><span class="pre">PTPFeedback.state</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPParam"><code class="docutils literal notranslate"><span class="pre">PTPParam</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPParam.angular_vel"><code class="docutils literal notranslate"><span class="pre">PTPParam.angular_vel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPParam.linear_acc"><code class="docutils literal notranslate"><span class="pre">PTPParam.linear_acc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPParam.linear_decel"><code class="docutils literal notranslate"><span class="pre">PTPParam.linear_decel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPParam.linear_vel"><code class="docutils literal notranslate"><span class="pre">PTPParam.linear_vel</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPParam.rotate_acc"><code class="docutils literal notranslate"><span class="pre">PTPParam.rotate_acc</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html#wsc_robotic.navigation.base_motion_kit.PTPParam.rotate_decel"><code class="docutils literal notranslate"><span class="pre">PTPParam.rotate_decel</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.navigation.html#module-wsc_robotic.navigation">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wsc_robotic.oms.html">wsc_robotic.oms package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.oms.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.oms.html#module-wsc_robotic.oms.lift_motor">wsc_robotic.oms.lift_motor module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor"><code class="docutils literal notranslate"><span class="pre">LiftMotor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.back_origin"><code class="docutils literal notranslate"><span class="pre">LiftMotor.back_origin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.cail_dis"><code class="docutils literal notranslate"><span class="pre">LiftMotor.cail_dis</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.cail_step"><code class="docutils literal notranslate"><span class="pre">LiftMotor.cail_step</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.get_feedback"><code class="docutils literal notranslate"><span class="pre">LiftMotor.get_feedback()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.get_planner_data"><code class="docutils literal notranslate"><span class="pre">LiftMotor.get_planner_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.max_distance"><code class="docutils literal notranslate"><span class="pre">LiftMotor.max_distance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.min_distance"><code class="docutils literal notranslate"><span class="pre">LiftMotor.min_distance</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.set_position"><code class="docutils literal notranslate"><span class="pre">LiftMotor.set_position()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.set_position_with_plan"><code class="docutils literal notranslate"><span class="pre">LiftMotor.set_position_with_plan()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.lift_motor.LiftMotor.wait_finished"><code class="docutils literal notranslate"><span class="pre">LiftMotor.wait_finished()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.oms.html#module-wsc_robotic.oms.oms_param">wsc_robotic.oms.oms_param module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.oms.html#module-wsc_robotic.oms.rotate_motor">wsc_robotic.oms.rotate_motor module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.rotate_motor.RotateMotor"><code class="docutils literal notranslate"><span class="pre">RotateMotor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.rotate_motor.RotateMotor.back_origin"><code class="docutils literal notranslate"><span class="pre">RotateMotor.back_origin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.rotate_motor.RotateMotor.get_feedback"><code class="docutils literal notranslate"><span class="pre">RotateMotor.get_feedback()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.rotate_motor.RotateMotor.get_planner_data"><code class="docutils literal notranslate"><span class="pre">RotateMotor.get_planner_data()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.rotate_motor.RotateMotor.max_range"><code class="docutils literal notranslate"><span class="pre">RotateMotor.max_range</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.rotate_motor.RotateMotor.min_range"><code class="docutils literal notranslate"><span class="pre">RotateMotor.min_range</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.rotate_motor.RotateMotor.set_position"><code class="docutils literal notranslate"><span class="pre">RotateMotor.set_position()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.rotate_motor.RotateMotor.set_position_with_plan"><code class="docutils literal notranslate"><span class="pre">RotateMotor.set_position_with_plan()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.rotate_motor.RotateMotor.wait_finished"><code class="docutils literal notranslate"><span class="pre">RotateMotor.wait_finished()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.oms.html#module-wsc_robotic.oms.servo">wsc_robotic.oms.servo module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.Servo"><code class="docutils literal notranslate"><span class="pre">Servo</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.Servo.gripper"><code class="docutils literal notranslate"><span class="pre">Servo.gripper()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.Servo.gripper_ry"><code class="docutils literal notranslate"><span class="pre">Servo.gripper_ry()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.Servo.gripper_rz"><code class="docutils literal notranslate"><span class="pre">Servo.gripper_rz()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.Servo.start"><code class="docutils literal notranslate"><span class="pre">Servo.start()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.Servo.stop"><code class="docutils literal notranslate"><span class="pre">Servo.stop()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.Servo.telescopic"><code class="docutils literal notranslate"><span class="pre">Servo.telescopic()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.Servo.write_duty"><code class="docutils literal notranslate"><span class="pre">Servo.write_duty()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.ServoPort"><code class="docutils literal notranslate"><span class="pre">ServoPort</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.ServoPort.SERVO0"><code class="docutils literal notranslate"><span class="pre">ServoPort.SERVO0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.ServoPort.SERVO1"><code class="docutils literal notranslate"><span class="pre">ServoPort.SERVO1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.ServoPort.SERVO2"><code class="docutils literal notranslate"><span class="pre">ServoPort.SERVO2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.ServoPort.SERVO3"><code class="docutils literal notranslate"><span class="pre">ServoPort.SERVO3</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo.ServoPort.SERVO4"><code class="docutils literal notranslate"><span class="pre">ServoPort.SERVO4</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.oms.html#module-wsc_robotic.oms.servo_actuator">wsc_robotic.oms.servo_actuator module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.GripperActuator"><code class="docutils literal notranslate"><span class="pre">GripperActuator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.GripperRyActuator"><code class="docutils literal notranslate"><span class="pre">GripperRyActuator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.GripperRzActuator"><code class="docutils literal notranslate"><span class="pre">GripperRzActuator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.ServoActuator"><code class="docutils literal notranslate"><span class="pre">ServoActuator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.ServoActuator.start"><code class="docutils literal notranslate"><span class="pre">ServoActuator.start()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.ServoActuator.stop"><code class="docutils literal notranslate"><span class="pre">ServoActuator.stop()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.ServoActuatorBase"><code class="docutils literal notranslate"><span class="pre">ServoActuatorBase</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.ServoActuatorBase.get_curr_pos"><code class="docutils literal notranslate"><span class="pre">ServoActuatorBase.get_curr_pos()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.ServoActuatorBase.is_finished"><code class="docutils literal notranslate"><span class="pre">ServoActuatorBase.is_finished()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.ServoActuatorBase.start"><code class="docutils literal notranslate"><span class="pre">ServoActuatorBase.start()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.ServoActuatorBase.stop"><code class="docutils literal notranslate"><span class="pre">ServoActuatorBase.stop()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.ServoActuatorBase.wait"><code class="docutils literal notranslate"><span class="pre">ServoActuatorBase.wait()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.oms.html#wsc_robotic.oms.servo_actuator.TelescopicActuator"><code class="docutils literal notranslate"><span class="pre">TelescopicActuator</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.oms.html#module-wsc_robotic.oms">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wsc_robotic.sensor.html">wsc_robotic.sensor package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.sensor.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.sensor.html#module-wsc_robotic.sensor.lidar">wsc_robotic.sensor.lidar module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.lidar.Lidar"><code class="docutils literal notranslate"><span class="pre">Lidar</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.lidar.Lidar.close"><code class="docutils literal notranslate"><span class="pre">Lidar.close()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.lidar.Lidar.get_distance"><code class="docutils literal notranslate"><span class="pre">Lidar.get_distance()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.lidar.Lidar.get_lidar_val"><code class="docutils literal notranslate"><span class="pre">Lidar.get_lidar_val()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.lidar.Lidar.open"><code class="docutils literal notranslate"><span class="pre">Lidar.open()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.lidar.Lidar.read"><code class="docutils literal notranslate"><span class="pre">Lidar.read()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.sensor.html#module-wsc_robotic.sensor.sensor">wsc_robotic.sensor.sensor module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.IR"><code class="docutils literal notranslate"><span class="pre">IR</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.IR.IR0"><code class="docutils literal notranslate"><span class="pre">IR.IR0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.IR.IR1"><code class="docutils literal notranslate"><span class="pre">IR.IR1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.IR.IR2"><code class="docutils literal notranslate"><span class="pre">IR.IR2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.IR.IR3"><code class="docutils literal notranslate"><span class="pre">IR.IR3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.Sensor"><code class="docutils literal notranslate"><span class="pre">Sensor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.Sensor.read_ir"><code class="docutils literal notranslate"><span class="pre">Sensor.read_ir()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.Sensor.read_lsb"><code class="docutils literal notranslate"><span class="pre">Sensor.read_lsb()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.Sensor.read_sonar"><code class="docutils literal notranslate"><span class="pre">Sensor.read_sonar()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.Sonar"><code class="docutils literal notranslate"><span class="pre">Sonar</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.Sonar.SONAR0"><code class="docutils literal notranslate"><span class="pre">Sonar.SONAR0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor.Sonar.SONAR1"><code class="docutils literal notranslate"><span class="pre">Sonar.SONAR1</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.sensor.html#module-wsc_robotic.sensor.sensor_correct">wsc_robotic.sensor.sensor_correct module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.CorrectMode"><code class="docutils literal notranslate"><span class="pre">CorrectMode</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.CorrectMode.SENSOR0"><code class="docutils literal notranslate"><span class="pre">CorrectMode.SENSOR0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.CorrectMode.SENSOR0_AND_SENSOR1"><code class="docutils literal notranslate"><span class="pre">CorrectMode.SENSOR0_AND_SENSOR1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.CorrectMode.SENSOR1"><code class="docutils literal notranslate"><span class="pre">CorrectMode.SENSOR1</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.SensorCorrect"><code class="docutils literal notranslate"><span class="pre">SensorCorrect</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.SensorCorrect.send_controls_request"><code class="docutils literal notranslate"><span class="pre">SensorCorrect.send_controls_request()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.SensorCorrect.wait_finished"><code class="docutils literal notranslate"><span class="pre">SensorCorrect.wait_finished()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.SensorType"><code class="docutils literal notranslate"><span class="pre">SensorType</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.SensorType.IR"><code class="docutils literal notranslate"><span class="pre">SensorType.IR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.SensorType.LIDAR"><code class="docutils literal notranslate"><span class="pre">SensorType.LIDAR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html#wsc_robotic.sensor.sensor_correct.SensorType.PING"><code class="docutils literal notranslate"><span class="pre">SensorType.PING</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.sensor.html#module-wsc_robotic.sensor">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wsc_robotic.user.html">wsc_robotic.user package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.user.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.user.html#module-wsc_robotic.user.robot_action">wsc_robotic.user.robot_action module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.user.html#wsc_robotic.user.robot_action.start_button"><code class="docutils literal notranslate"><span class="pre">start_button()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.user.html#module-wsc_robotic.user">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wsc_robotic.utils.html">wsc_robotic.utils package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.utils.html#module-wsc_robotic.utils.app_manager">wsc_robotic.utils.app_manager module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.app_manager.get_cmd"><code class="docutils literal notranslate"><span class="pre">get_cmd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.app_manager.get_pid"><code class="docutils literal notranslate"><span class="pre">get_pid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.app_manager.load_config"><code class="docutils literal notranslate"><span class="pre">load_config()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.app_manager.run_apps"><code class="docutils literal notranslate"><span class="pre">run_apps()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.app_manager.stop"><code class="docutils literal notranslate"><span class="pre">stop()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.app_manager.wait_exit"><code class="docutils literal notranslate"><span class="pre">wait_exit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.app_manager.wait_start"><code class="docutils literal notranslate"><span class="pre">wait_start()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.utils.html#module-wsc_robotic.utils.license_client">wsc_robotic.utils.license_client module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.license_client.LicenseClient"><code class="docutils literal notranslate"><span class="pre">LicenseClient</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.license_client.LicenseClient.call_license_srv"><code class="docutils literal notranslate"><span class="pre">LicenseClient.call_license_srv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.license_client.LicenseClient.get_license_status"><code class="docutils literal notranslate"><span class="pre">LicenseClient.get_license_status()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.utils.html#module-wsc_robotic.utils.trapezoidal_planner">wsc_robotic.utils.trapezoidal_planner module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.trapezoidal_planner.TrapezoidalPlanner"><code class="docutils literal notranslate"><span class="pre">TrapezoidalPlanner</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.trapezoidal_planner.TrapezoidalPlanner.init_plan"><code class="docutils literal notranslate"><span class="pre">TrapezoidalPlanner.init_plan()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.trapezoidal_planner.TrapezoidalPlanner.plan"><code class="docutils literal notranslate"><span class="pre">TrapezoidalPlanner.plan()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.trapezoidal_planner.TrapezoidalPlanner.plan_with_time"><code class="docutils literal notranslate"><span class="pre">TrapezoidalPlanner.plan_with_time()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.utils.html#module-wsc_robotic.utils.utils">wsc_robotic.utils.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.FileManager"><code class="docutils literal notranslate"><span class="pre">FileManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.FileManager.close"><code class="docutils literal notranslate"><span class="pre">FileManager.close()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.FileManager.connect"><code class="docutils literal notranslate"><span class="pre">FileManager.connect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.FileManager.download_folder"><code class="docutils literal notranslate"><span class="pre">FileManager.download_folder()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.FileManager.remove_folder"><code class="docutils literal notranslate"><span class="pre">FileManager.remove_folder()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.FileManager.upload_file"><code class="docutils literal notranslate"><span class="pre">FileManager.upload_file()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.FileManager.upload_folder"><code class="docutils literal notranslate"><span class="pre">FileManager.upload_folder()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.file_get"><code class="docutils literal notranslate"><span class="pre">file_get()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.file_put"><code class="docutils literal notranslate"><span class="pre">file_put()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.utils.system_command"><code class="docutils literal notranslate"><span class="pre">system_command()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.utils.html#module-wsc_robotic.utils.vmxpi">wsc_robotic.utils.vmxpi module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.vmxpi.VmxPi"><code class="docutils literal notranslate"><span class="pre">VmxPi</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.vmxpi.VmxPi.destory"><code class="docutils literal notranslate"><span class="pre">VmxPi.destory()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.vmxpi.VmxPi.read_vmxpi_datas"><code class="docutils literal notranslate"><span class="pre">VmxPi.read_vmxpi_datas()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.vmxpi.VmxPi.set_digital_output"><code class="docutils literal notranslate"><span class="pre">VmxPi.set_digital_output()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.vmxpi.VmxPi.wait"><code class="docutils literal notranslate"><span class="pre">VmxPi.wait()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.vmxpi.VmxPi.write_pwm"><code class="docutils literal notranslate"><span class="pre">VmxPi.write_pwm()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.utils.html#module-wsc_robotic.utils">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wsc_robotic.vision.html">wsc_robotic.vision package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.vision.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.vision.html#module-wsc_robotic.vision.camera">wsc_robotic.vision.camera module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.camera.Camera"><code class="docutils literal notranslate"><span class="pre">Camera</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.camera.Camera.read_video_stream"><code class="docutils literal notranslate"><span class="pre">Camera.read_video_stream()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.camera.Camera.snap"><code class="docutils literal notranslate"><span class="pre">Camera.snap()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.camera.Camera.start_video_stream"><code class="docutils literal notranslate"><span class="pre">Camera.start_video_stream()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.camera.Camera.stop_video_stream"><code class="docutils literal notranslate"><span class="pre">Camera.stop_video_stream()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.camera.SnapMethod"><code class="docutils literal notranslate"><span class="pre">SnapMethod</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.camera.SnapMethod.ALL"><code class="docutils literal notranslate"><span class="pre">SnapMethod.ALL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.camera.SnapMethod.COLOR"><code class="docutils literal notranslate"><span class="pre">SnapMethod.COLOR</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.camera.SnapMethod.DEPTH"><code class="docutils literal notranslate"><span class="pre">SnapMethod.DEPTH</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.vision.html#module-wsc_robotic.vision.mnn_detector">wsc_robotic.vision.mnn_detector module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.mnn_detector.MNNDetector"><code class="docutils literal notranslate"><span class="pre">MNNDetector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.mnn_detector.MNNDetector.detect"><code class="docutils literal notranslate"><span class="pre">MNNDetector.detect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.mnn_detector.MNNDetector.get_result_image"><code class="docutils literal notranslate"><span class="pre">MNNDetector.get_result_image()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.mnn_detector.MNNDetector.is_opened"><code class="docutils literal notranslate"><span class="pre">MNNDetector.is_opened()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.mnn_detector.MNNDetector.start"><code class="docutils literal notranslate"><span class="pre">MNNDetector.start()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.mnn_detector.MNNDetector.stop"><code class="docutils literal notranslate"><span class="pre">MNNDetector.stop()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.vision.html#module-wsc_robotic.vision.object_3d_extractor">wsc_robotic.vision.object_3d_extractor module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.object_3d_extractor.Object3DExtractor"><code class="docutils literal notranslate"><span class="pre">Object3DExtractor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.object_3d_extractor.Object3DExtractor.extract_object_center_3d"><code class="docutils literal notranslate"><span class="pre">Object3DExtractor.extract_object_center_3d()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.object_3d_extractor.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.vision.html#module-wsc_robotic.vision.user_mnn_detector">wsc_robotic.vision.user_mnn_detector module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.area"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.area</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.bbox"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.bbox</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.center_2d"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.center_2d</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.center_3d"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.center_3d</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.class_id"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.class_id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.get_center"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.get_center()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.get_width_height"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.get_width_height()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.label"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.label</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.point_density"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.point_density</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.score"><code class="docutils literal notranslate"><span class="pre">DetectionResult3D.score</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelConfig"><code class="docutils literal notranslate"><span class="pre">ModelConfig</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelConfig.BACKEND"><code class="docutils literal notranslate"><span class="pre">ModelConfig.BACKEND</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelConfig.LABEL_PATH"><code class="docutils literal notranslate"><span class="pre">ModelConfig.LABEL_PATH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelConfig.MODEL_PATH"><code class="docutils literal notranslate"><span class="pre">ModelConfig.MODEL_PATH</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelConfig.MODEL_SIZE"><code class="docutils literal notranslate"><span class="pre">ModelConfig.MODEL_SIZE</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelConfig.MODEL_VERSION"><code class="docutils literal notranslate"><span class="pre">ModelConfig.MODEL_VERSION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelConfig.NMS_THRES"><code class="docutils literal notranslate"><span class="pre">ModelConfig.NMS_THRES</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelConfig.PRECISION"><code class="docutils literal notranslate"><span class="pre">ModelConfig.PRECISION</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelConfig.THREAD"><code class="docutils literal notranslate"><span class="pre">ModelConfig.THREAD</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelVersion"><code class="docutils literal notranslate"><span class="pre">ModelVersion</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelVersion.YOLO11"><code class="docutils literal notranslate"><span class="pre">ModelVersion.YOLO11</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.ModelVersion.YOLO26"><code class="docutils literal notranslate"><span class="pre">ModelVersion.YOLO26</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.Point3D"><code class="docutils literal notranslate"><span class="pre">Point3D</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.Point3D.from_numpy"><code class="docutils literal notranslate"><span class="pre">Point3D.from_numpy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.Point3D.x"><code class="docutils literal notranslate"><span class="pre">Point3D.x</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.Point3D.y"><code class="docutils literal notranslate"><span class="pre">Point3D.y</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.Point3D.z"><code class="docutils literal notranslate"><span class="pre">Point3D.z</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.UserMnnDetector"><code class="docutils literal notranslate"><span class="pre">UserMnnDetector</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.inference_yolo11"><code class="docutils literal notranslate"><span class="pre">UserMnnDetector.inference_yolo11()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.inference_yolo26"><code class="docutils literal notranslate"><span class="pre">UserMnnDetector.inference_yolo26()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.load_from_txt"><code class="docutils literal notranslate"><span class="pre">UserMnnDetector.load_from_txt()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.load_model"><code class="docutils literal notranslate"><span class="pre">UserMnnDetector.load_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.mnn_detect"><code class="docutils literal notranslate"><span class="pre">UserMnnDetector.mnn_detect()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.mnn_detect_img"><code class="docutils literal notranslate"><span class="pre">UserMnnDetector.mnn_detect_img()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.preprocess_yolo11"><code class="docutils literal notranslate"><span class="pre">UserMnnDetector.preprocess_yolo11()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.vision.html#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.preprocess_yolo26"><code class="docutils literal notranslate"><span class="pre">UserMnnDetector.preprocess_yolo26()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wsc_robotic.vision.html#module-wsc_robotic.vision">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-wsc_robotic.robotics">
+<span id="wsc-robotic-robotics-module"></span><h2>wsc_robotic.robotics module<a class="headerlink" href="#module-wsc_robotic.robotics" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.robotics.Robotics">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.robotics.</span></span><span class="sig-name descname"><span class="pre">Robotics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.robotics.Robotics" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>机器人主节点</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.robotics.Robotics.get_node">
+<span class="sig-name descname"><span class="pre">get_node</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.robotics.Robotics.get_node" title="Link to this definition"></a></dt>
+<dd><p>获取节点</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>节点</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Node</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.robotics.Robotics.get_vmxpi">
+<span class="sig-name descname"><span class="pre">get_vmxpi</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.robotics.Robotics.get_vmxpi" title="Link to this definition"></a></dt>
+<dd><p>获取vmx</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>vmxpi接口</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="wsc_robotic.utils.html#wsc_robotic.utils.vmxpi.VmxPi" title="wsc_robotic.utils.vmxpi.VmxPi">VmxPi</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.robotics.Robotics.gripper_ry_set_val">
+<span class="sig-name descname"><span class="pre">gripper_ry_set_val</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#wsc_robotic.robotics.Robotics.gripper_ry_set_val" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.robotics.Robotics.gripper_rz_set_val">
+<span class="sig-name descname"><span class="pre">gripper_rz_set_val</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#wsc_robotic.robotics.Robotics.gripper_rz_set_val" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.robotics.Robotics.gripper_set_val">
+<span class="sig-name descname"><span class="pre">gripper_set_val</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#wsc_robotic.robotics.Robotics.gripper_set_val" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.robotics.Robotics.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.robotics.Robotics.stop" title="Link to this definition"></a></dt>
+<dd><p>关闭程序</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.robotics.Robotics.telescopic_set_val">
+<span class="sig-name descname"><span class="pre">telescopic_set_val</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#wsc_robotic.robotics.Robotics.telescopic_set_val" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-wsc_robotic" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="user.html" class="btn btn-neutral float-left" title="user package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="wsc_robotic.chassis.html" class="btn btn-neutral float-right" title="wsc_robotic.chassis package" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, Zhang Chao.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

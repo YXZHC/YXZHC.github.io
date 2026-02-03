@@ -1,0 +1,35 @@
+wsc\_robotic package
+====================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   wsc_robotic.chassis
+   wsc_robotic.navigation
+   wsc_robotic.oms
+   wsc_robotic.sensor
+   wsc_robotic.user
+   wsc_robotic.utils
+   wsc_robotic.vision
+
+Submodules
+----------
+
+wsc\_robotic.robotics module
+----------------------------
+
+.. automodule:: wsc_robotic.robotics
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: wsc_robotic
+   :members:
+   :undoc-members:
+   :show-inheritance:
