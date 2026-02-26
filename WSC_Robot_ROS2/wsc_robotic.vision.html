@@ -1,0 +1,698 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>wsc_robotic.vision package &mdash; WSC_Robot_ROS2 0.0.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5a0213dc"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="prev" title="wsc_robotic.utils package" href="wsc_robotic.utils.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            WSC_Robot_ROS2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">HB-Python-Documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">wsc_hbrobotv2_python</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user.html">user package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="wsc_robotic.html">wsc_robotic package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="wsc_robotic.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.chassis.html">wsc_robotic.chassis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.navigation.html">wsc_robotic.navigation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.oms.html">wsc_robotic.oms package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.sensor.html">wsc_robotic.sensor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.user.html">wsc_robotic.user package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsc_robotic.utils.html">wsc_robotic.utils package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">wsc_robotic.vision package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#module-wsc_robotic.robotics">wsc_robotic.robotics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wsc_robotic.html#module-wsc_robotic">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WSC_Robot_ROS2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">wsc_hbrobotv2_python</a></li>
+          <li class="breadcrumb-item"><a href="wsc_robotic.html">wsc_robotic package</a></li>
+      <li class="breadcrumb-item active">wsc_robotic.vision package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/wsc_robotic.vision.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="wsc-robotic-vision-package">
+<h1>wsc_robotic.vision package<a class="headerlink" href="#wsc-robotic-vision-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-wsc_robotic.vision.camera">
+<span id="wsc-robotic-vision-camera-module"></span><h2>wsc_robotic.vision.camera module<a class="headerlink" href="#module-wsc_robotic.vision.camera" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.vision.camera.Camera">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.camera.</span></span><span class="sig-name descname"><span class="pre">Camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.camera.Camera" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>相机</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.camera.Camera.read_video_stream">
+<span class="sig-name descname"><span class="pre">read_video_stream</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.camera.Camera.read_video_stream" title="Link to this definition"></a></dt>
+<dd><p>读取订阅的彩色图像</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>True成功, False失败
+img(np.ndarray):图像</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ret(bool)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.camera.Camera.snap">
+<span class="sig-name descname"><span class="pre">snap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SnapMethod.ALL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sync</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.camera.Camera.snap" title="Link to this definition"></a></dt>
+<dd><p>拍照接口Srv方式</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>method</strong> (<a class="reference internal" href="#wsc_robotic.vision.camera.SnapMethod" title="wsc_robotic.vision.camera.SnapMethod"><em>SnapMethod</em></a>) -- ALL拍所有,COLOR彩色图,DEPTH深度图</p></li>
+<li><p><strong>sync</strong> (<em>bool</em>) -- true为同步模式, 拍摄实时最新的图像, srv服务响应时间约等于100ms-200ms; flase为异步模式, 拍摄非最新的图像(底层缓存的图像),为上一帧或当前帧,srv服务响应时间短;</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>成功标志
+color_image(np.ndarray): 彩色图
+depth_image(np.ndarray): 深度图
+info(dict): 内参信息</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>success(bool)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.camera.Camera.start_video_stream">
+<span class="sig-name descname"><span class="pre">start_video_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">compressed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.camera.Camera.start_video_stream" title="Link to this definition"></a></dt>
+<dd><p>订阅彩色图像Topic</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>compressed</strong> (<em>bool</em>) -- true为订阅压缩图像, 订阅速度更快, 订阅图像质量更差; false为订阅原始图像, 订阅速度更慢, 订阅图像质量更好; 默认为false</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.camera.Camera.stop_video_stream">
+<span class="sig-name descname"><span class="pre">stop_video_stream</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.camera.Camera.stop_video_stream" title="Link to this definition"></a></dt>
+<dd><p>停止订阅彩色图像Topic</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.vision.camera.SnapMethod">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.camera.</span></span><span class="sig-name descname"><span class="pre">SnapMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.camera.SnapMethod" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.camera.SnapMethod.ALL">
+<span class="sig-name descname"><span class="pre">ALL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#wsc_robotic.vision.camera.SnapMethod.ALL" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.camera.SnapMethod.COLOR">
+<span class="sig-name descname"><span class="pre">COLOR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.vision.camera.SnapMethod.COLOR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.camera.SnapMethod.DEPTH">
+<span class="sig-name descname"><span class="pre">DEPTH</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#wsc_robotic.vision.camera.SnapMethod.DEPTH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic.vision.mnn_detector">
+<span id="wsc-robotic-vision-mnn-detector-module"></span><h2>wsc_robotic.vision.mnn_detector module<a class="headerlink" href="#module-wsc_robotic.vision.mnn_detector" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.vision.mnn_detector.MNNDetector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.mnn_detector.</span></span><span class="sig-name descname"><span class="pre">MNNDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.mnn_detector.MNNDetector" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>MNN检测器</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.mnn_detector.MNNDetector.detect">
+<span class="sig-name descname"><span class="pre">detect</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.mnn_detector.MNNDetector.detect" title="Link to this definition"></a></dt>
+<dd><p>检测</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>检测成功返回True, 否则返回False
+results (dict): 检测结果</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ret (bool)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.mnn_detector.MNNDetector.get_result_image">
+<span class="sig-name descname"><span class="pre">get_result_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.mnn_detector.MNNDetector.get_result_image" title="Link to this definition"></a></dt>
+<dd><p>获取检测结果图片</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>获取成功返回True, 否则返回False
+img (np.ndarray): 检测结果图片</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ret (bool)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.mnn_detector.MNNDetector.is_opened">
+<span class="sig-name descname"><span class="pre">is_opened</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.mnn_detector.MNNDetector.is_opened" title="Link to this definition"></a></dt>
+<dd><p>检测器是否已经打开(加载完模型)</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>检测器是否已经打开(加载完模型)</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.mnn_detector.MNNDetector.start">
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nms_thres</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.7</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.mnn_detector.MNNDetector.start" title="Link to this definition"></a></dt>
+<dd><p>启动检测器</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mode_path</strong> (<em>str</em>) -- 模型路径</p></li>
+<li><p><strong>label_path</strong> (<em>str</em>) -- 标签路径</p></li>
+<li><p><strong>nms_thres</strong> (<em>float</em>) -- nms阈值</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>启动成功返回True, 否则返回False</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.mnn_detector.MNNDetector.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.mnn_detector.MNNDetector.stop" title="Link to this definition"></a></dt>
+<dd><p>关闭检测器</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>关闭成功返回True, 否则返回False</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic.vision.object_3d_extractor">
+<span id="wsc-robotic-vision-object-3d-extractor-module"></span><h2>wsc_robotic.vision.object_3d_extractor module<a class="headerlink" href="#module-wsc_robotic.vision.object_3d_extractor" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.vision.object_3d_extractor.Object3DExtractor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.object_3d_extractor.</span></span><span class="sig-name descname"><span class="pre">Object3DExtractor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">depth_scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.001</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.object_3d_extractor.Object3DExtractor" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>3D目标提取</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.object_3d_extractor.Object3DExtractor.extract_object_center_3d">
+<span class="sig-name descname"><span class="pre">extract_object_center_3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">detection_results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D"><span class="pre">DetectionResult3D</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_info</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rgb_image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth_image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_weighted_center</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D"><span class="pre">DetectionResult3D</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.object_3d_extractor.Object3DExtractor.extract_object_center_3d" title="Link to this definition"></a></dt>
+<dd><p>批量提取多个目标的3D中心位置;</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>detection_results</strong> (<em>List</em><em>[</em><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D"><em>DetectionResult3D</em></a><em>]</em>) -- 检测结果列表</p></li>
+<li><p><strong>camera_info</strong> (<em>dict</em>) -- 相机内参信息字典</p></li>
+<li><p><strong>rgb_image</strong> (<em>np.ndarray</em>) -- RGB图像</p></li>
+<li><p><strong>depth_image</strong> (<em>np.ndarray</em>) -- 深度图像</p></li>
+<li><p><strong>use_weighted_center</strong> (<em>bool</em>) -- 是否使用加权中心点</p></li>
+<li><p><strong>debug</strong> (<em>bool</em>) -- 是否显示调试信息</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>更新后的检测结果列表</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>updated_results(List[<a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D">DetectionResult3D</a>])</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="wsc_robotic.vision.object_3d_extractor.main">
+<span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.object_3d_extractor.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.object_3d_extractor.main" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-wsc_robotic.vision.user_mnn_detector">
+<span id="wsc-robotic-vision-user-mnn-detector-module"></span><h2>wsc_robotic.vision.user_mnn_detector module<a class="headerlink" href="#module-wsc_robotic.vision.user_mnn_detector" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.user_mnn_detector.</span></span><span class="sig-name descname"><span class="pre">DetectionResult3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">class_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bbox</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center_2d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">(0.0,</span> <span class="pre">0.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center_3d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.Point3D" title="wsc_robotic.vision.user_mnn_detector.Point3D"><span class="pre">Point3D</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Point3D(x=0,</span> <span class="pre">y=0,</span> <span class="pre">z=0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_density</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>单个检测结果的数据结构</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.area">
+<span class="sig-name descname"><span class="pre">area</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.area" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.bbox">
+<span class="sig-name descname"><span class="pre">bbox</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.bbox" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.center_2d">
+<span class="sig-name descname"><span class="pre">center_2d</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(0.0,</span> <span class="pre">0.0)</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.center_2d" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.center_3d">
+<span class="sig-name descname"><span class="pre">center_3d</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.Point3D" title="wsc_robotic.vision.user_mnn_detector.Point3D"><span class="pre">Point3D</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Point3D(x=0,</span> <span class="pre">y=0,</span> <span class="pre">z=0)</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.center_3d" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.class_id">
+<span class="sig-name descname"><span class="pre">class_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.class_id" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.get_center">
+<span class="sig-name descname"><span class="pre">get_center</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.get_center" title="Link to this definition"></a></dt>
+<dd><p>获取边界框中心点坐标</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>中心点坐标</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[float, float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.get_width_height">
+<span class="sig-name descname"><span class="pre">get_width_height</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.get_width_height" title="Link to this definition"></a></dt>
+<dd><p>获取边界框宽度和高度</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>宽度和高度</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[int, int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.label">
+<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.label" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.point_density">
+<span class="sig-name descname"><span class="pre">point_density</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.point_density" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.DetectionResult3D.score">
+<span class="sig-name descname"><span class="pre">score</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D.score" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.user_mnn_detector.</span></span><span class="sig-name descname"><span class="pre">ModelConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">MODEL_PATH:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LABEL_PATH:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MODEL_VERSION:</span> <span class="pre">wsc_robotic.vision.user_mnn_detector.ModelVersion</span> <span class="pre">=</span> <span class="pre">&lt;ModelVersion.YOLO11:</span> <span class="pre">'yolo11'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">NMS_THRES:</span> <span class="pre">float</span> <span class="pre">=</span> <span class="pre">0.45</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">MODEL_SIZE:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">320</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">PRECISION:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'normal'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">BACKEND:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'CPU'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">THREAD:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelConfig.BACKEND">
+<span class="sig-name descname"><span class="pre">BACKEND</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CPU'</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig.BACKEND" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelConfig.LABEL_PATH">
+<span class="sig-name descname"><span class="pre">LABEL_PATH</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig.LABEL_PATH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelConfig.MODEL_PATH">
+<span class="sig-name descname"><span class="pre">MODEL_PATH</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig.MODEL_PATH" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelConfig.MODEL_SIZE">
+<span class="sig-name descname"><span class="pre">MODEL_SIZE</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">320</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig.MODEL_SIZE" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelConfig.MODEL_VERSION">
+<span class="sig-name descname"><span class="pre">MODEL_VERSION</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.ModelVersion" title="wsc_robotic.vision.user_mnn_detector.ModelVersion"><span class="pre">ModelVersion</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'yolo11'</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig.MODEL_VERSION" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelConfig.NMS_THRES">
+<span class="sig-name descname"><span class="pre">NMS_THRES</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.45</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig.NMS_THRES" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelConfig.PRECISION">
+<span class="sig-name descname"><span class="pre">PRECISION</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'normal'</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig.PRECISION" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelConfig.THREAD">
+<span class="sig-name descname"><span class="pre">THREAD</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig.THREAD" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelVersion">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.user_mnn_detector.</span></span><span class="sig-name descname"><span class="pre">ModelVersion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelVersion" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>模型版本</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelVersion.YOLO11">
+<span class="sig-name descname"><span class="pre">YOLO11</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'yolo11'</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelVersion.YOLO11" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.ModelVersion.YOLO26">
+<span class="sig-name descname"><span class="pre">YOLO26</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'yolo26'</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.ModelVersion.YOLO26" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.Point3D">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.user_mnn_detector.</span></span><span class="sig-name descname"><span class="pre">Point3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.Point3D" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>三维点的数据结构</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.Point3D.from_numpy">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_numpy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.Point3D" title="wsc_robotic.vision.user_mnn_detector.Point3D"><span class="pre">Point3D</span></a></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.Point3D.from_numpy" title="Link to this definition"></a></dt>
+<dd><p>从numpy数组创建Point3D对象</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.Point3D.x">
+<span class="sig-name descname"><span class="pre">x</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.Point3D.x" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.Point3D.y">
+<span class="sig-name descname"><span class="pre">y</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.Point3D.y" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.Point3D.z">
+<span class="sig-name descname"><span class="pre">z</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.Point3D.z" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.UserMnnDetector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">wsc_robotic.vision.user_mnn_detector.</span></span><span class="sig-name descname"><span class="pre">UserMnnDetector</span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.UserMnnDetector" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>用户自定义MNN模型推理类</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.UserMnnDetector.inference_yolo11">
+<span class="sig-name descname"><span class="pre">inference_yolo11</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_var</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">original_image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D"><span class="pre">DetectionResult3D</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.inference_yolo11" title="Link to this definition"></a></dt>
+<dd><p>进行模型推理并返回检测结果</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_var</strong> (<em>np.ndarray</em>) -- 输入数据，形状为[1, 3, 320, 320]</p></li>
+<li><p><strong>original_image</strong> (<em>np.ndarray</em>) -- 原始图像数据，用于绘制检测结果</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>检测结果列表</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D">DetectionResult3D</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.UserMnnDetector.inference_yolo26">
+<span class="sig-name descname"><span class="pre">inference_yolo26</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_var</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">original_image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D"><span class="pre">DetectionResult3D</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.inference_yolo26" title="Link to this definition"></a></dt>
+<dd><p>进行模型推理并返回检测结果yolo26</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_var</strong> (<em>np.ndarray</em>) -- 输入数据，形状为[1, 3, 320, 320]</p></li>
+<li><p><strong>original_image</strong> (<em>np.ndarray</em>) -- 原始图像数据，用于绘制检测结果</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>检测结果列表</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D">DetectionResult3D</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.UserMnnDetector.load_from_txt">
+<span class="sig-name descname"><span class="pre">load_from_txt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.load_from_txt" title="Link to this definition"></a></dt>
+<dd><p>从txt文件中加载标签列表</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_path</strong> (<em>str</em>) -- 标签文件路径</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>标签列表</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.UserMnnDetector.load_model">
+<span class="sig-name descname"><span class="pre">load_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig" title="wsc_robotic.vision.user_mnn_detector.ModelConfig"><span class="pre">ModelConfig</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.load_model" title="Link to this definition"></a></dt>
+<dd><p>加载模型</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model_config</strong> (<a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.ModelConfig" title="wsc_robotic.vision.user_mnn_detector.ModelConfig"><em>ModelConfig</em></a>) -- 模型配置参数</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.UserMnnDetector.mnn_detect">
+<span class="sig-name descname"><span class="pre">mnn_detect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D"><span class="pre">DetectionResult3D</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.mnn_detect" title="Link to this definition"></a></dt>
+<dd><p>传入图像路径进行检测</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>image_path</strong> (<em>str</em>) -- 输入图像路径</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>检测结果列表</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D">DetectionResult3D</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.UserMnnDetector.mnn_detect_img">
+<span class="sig-name descname"><span class="pre">mnn_detect_img</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D"><span class="pre">DetectionResult3D</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.mnn_detect_img" title="Link to this definition"></a></dt>
+<dd><p>传入图像数组进行检测</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>img</strong> (<em>np.ndarray</em>) -- 输入图像数组,格式为BGR</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>检测结果列表</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="#wsc_robotic.vision.user_mnn_detector.DetectionResult3D" title="wsc_robotic.vision.user_mnn_detector.DetectionResult3D">DetectionResult3D</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.UserMnnDetector.preprocess_yolo11">
+<span class="sig-name descname"><span class="pre">preprocess_yolo11</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">original_image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.preprocess_yolo11" title="Link to this definition"></a></dt>
+<dd><p>预处理输入图像</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>original_image</strong> (<em>np.ndarray</em>) -- 原始图像数据</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>预处理后的图像数据和原始图像数据</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[np.ndarray, np.ndarray]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="wsc_robotic.vision.user_mnn_detector.UserMnnDetector.preprocess_yolo26">
+<span class="sig-name descname"><span class="pre">preprocess_yolo26</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">original_image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#wsc_robotic.vision.user_mnn_detector.UserMnnDetector.preprocess_yolo26" title="Link to this definition"></a></dt>
+<dd><p>预处理输入图像yolo26</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>original_image</strong> (<em>np.ndarray</em>) -- 原始图像数据</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>预处理后的图像数据和原始图像数据</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[np.ndarray, np.ndarray]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-wsc_robotic.vision">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-wsc_robotic.vision" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="wsc_robotic.utils.html" class="btn btn-neutral float-left" title="wsc_robotic.utils package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, Zhang Chao.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

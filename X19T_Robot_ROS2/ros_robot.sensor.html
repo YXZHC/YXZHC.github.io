@@ -1,0 +1,574 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ros_robot.sensor package &mdash; HB_Ros_Robot_Python 2.0.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=b15d7ad8"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="ros_robot.utils package" href="ros_robot.utils.html" />
+    <link rel="prev" title="ros_robot.oms package" href="ros_robot.oms.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            HB_Ros_Robot_Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">API 接口:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">HB_Ros_Robot_Python</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ros_robot.html">ros_robot package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="ros_robot.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.chassis.html">ros_robot.chassis package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.config.html">ros_robot.config package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.navigation.html">ros_robot.navigation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.oms.html">ros_robot.oms package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">ros_robot.sensor package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.utils.html">ros_robot.utils package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ros_robot.vision.html">ros_robot.vision package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.html#module-ros_robot.robotics">ros_robot.robotics module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ros_robot.html#module-ros_robot">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HB_Ros_Robot_Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">HB_Ros_Robot_Python</a></li>
+          <li class="breadcrumb-item"><a href="ros_robot.html">ros_robot package</a></li>
+      <li class="breadcrumb-item active">ros_robot.sensor package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ros_robot.sensor.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ros-robot-sensor-package">
+<h1>ros_robot.sensor package<a class="headerlink" href="#ros-robot-sensor-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-ros_robot.sensor.imu">
+<span id="ros-robot-sensor-imu-module"></span><h2>ros_robot.sensor.imu module<a class="headerlink" href="#module-ros_robot.sensor.imu" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.sensor.imu.</span></span><span class="sig-name descname"><span class="pre">ImuManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>IMU传感器管理器</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager.get_angular_velocity">
+<span class="sig-name descname"><span class="pre">get_angular_velocity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Vector3</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager.get_angular_velocity" title="Link to this definition"></a></dt>
+<dd><p>获取当前角速度</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>角速度向量 (rad/s),如果未初始化则返回None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager.get_heading">
+<span class="sig-name descname"><span class="pre">get_heading</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager.get_heading" title="Link to this definition"></a></dt>
+<dd><p>获取当前航向角(偏航角,0-360度)</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>航向角,0度指向正北,顺时针增加,如果未初始化则返回None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager.get_latest_imu_data">
+<span class="sig-name descname"><span class="pre">get_latest_imu_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Imu</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager.get_latest_imu_data" title="Link to this definition"></a></dt>
+<dd><p>获取最新的原始IMU消息</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>原始IMU消息,如果未初始化则返回None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager.get_linear_acceleration">
+<span class="sig-name descname"><span class="pre">get_linear_acceleration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Vector3</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager.get_linear_acceleration" title="Link to this definition"></a></dt>
+<dd><p>获取当前线加速度</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>线加速度向量 (m/s²),如果未初始化则返回None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager.get_orientation">
+<span class="sig-name descname"><span class="pre">get_orientation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Quaternion</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager.get_orientation" title="Link to this definition"></a></dt>
+<dd><p>获取当前姿态四元数</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>四元数,如果未初始化则返回None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager.get_orientation_euler">
+<span class="sig-name descname"><span class="pre">get_orientation_euler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager.get_orientation_euler" title="Link to this definition"></a></dt>
+<dd><p>获取当前欧拉角(度)</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>包含roll, pitch, yaw的字典,单位为度</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager.get_pitch">
+<span class="sig-name descname"><span class="pre">get_pitch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager.get_pitch" title="Link to this definition"></a></dt>
+<dd><p>获取当前俯仰角</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>俯仰角(度),正值为抬头,负值为低头,如果未初始化则返回None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager.get_roll">
+<span class="sig-name descname"><span class="pre">get_roll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager.get_roll" title="Link to this definition"></a></dt>
+<dd><p>获取当前横滚角</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>横滚角(度),正值为右倾,负值为左倾,如果未初始化则返回None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.imu.ImuManager.is_initialized">
+<span class="sig-name descname"><span class="pre">is_initialized</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#ros_robot.sensor.imu.ImuManager.is_initialized" title="Link to this definition"></a></dt>
+<dd><p>检查IMU是否已初始化</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>True表示已初始化,False表示未初始化</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-ros_robot.sensor.lidar">
+<span id="ros-robot-sensor-lidar-module"></span><h2>ros_robot.sensor.lidar module<a class="headerlink" href="#module-ros_robot.sensor.lidar" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.sensor.lidar.LaserScanManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.sensor.lidar.</span></span><span class="sig-name descname"><span class="pre">LaserScanManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.lidar.LaserScanManager" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>激光雷达</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.lidar.LaserScanManager.get_latest_scan_data">
+<span class="sig-name descname"><span class="pre">get_latest_scan_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">LaserScan</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.lidar.LaserScanManager.get_latest_scan_data" title="Link to this definition"></a></dt>
+<dd><p>获取最新的原始激光雷达消息</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>最新的原始激光雷达消息,无则返回None</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>LaserScan</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.lidar.LaserScanManager.get_range_at_angle">
+<span class="sig-name descname"><span class="pre">get_range_at_angle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target_angle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#ros_robot.sensor.lidar.LaserScanManager.get_range_at_angle" title="Link to this definition"></a></dt>
+<dd><p>获取指定角度的测距值</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>target_angle</strong> (<em>float</em>) -- 目标角度(度,0°为正前向,顺时针增加)</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>测距值(米),无效则返回None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.lidar.LaserScanManager.is_initialized">
+<span class="sig-name descname"><span class="pre">is_initialized</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#ros_robot.sensor.lidar.LaserScanManager.is_initialized" title="Link to this definition"></a></dt>
+<dd><p>检查激光雷达是否已初始化</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>激光雷达是否已初始化</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-ros_robot.sensor.sensor_correct">
+<span id="ros-robot-sensor-sensor-correct-module"></span><h2>ros_robot.sensor.sensor_correct module<a class="headerlink" href="#module-ros_robot.sensor.sensor_correct" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.CorrectMode">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.sensor.sensor_correct.</span></span><span class="sig-name descname"><span class="pre">CorrectMode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_correct.CorrectMode" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.CorrectMode.SENSOR0">
+<span class="sig-name descname"><span class="pre">SENSOR0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_correct.CorrectMode.SENSOR0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.CorrectMode.SENSOR0_AND_SENSOR1">
+<span class="sig-name descname"><span class="pre">SENSOR0_AND_SENSOR1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_correct.CorrectMode.SENSOR0_AND_SENSOR1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.CorrectMode.SENSOR1">
+<span class="sig-name descname"><span class="pre">SENSOR1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_correct.CorrectMode.SENSOR1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.SensorCorrect">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.sensor.sensor_correct.</span></span><span class="sig-name descname"><span class="pre">SensorCorrect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_correct.SensorCorrect" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>传感器校正</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.SensorCorrect.send_controls_request">
+<span class="sig-name descname"><span class="pre">send_controls_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">set_revise_x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">set_x0_comp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensor_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">SensorType.PING</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">correction_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">CorrectMode.SENSOR0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_correct.SensorCorrect.send_controls_request" title="Link to this definition"></a></dt>
+<dd><p>发送修正控制请求</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>set_revise_x</strong> (<em>float</em><em>, </em><em>optional</em>) -- x 修正设定值(cm). Defaults to 0.0.</p></li>
+<li><p><strong>set_x0_comp</strong> (<em>float</em><em>, </em><em>optional</em>) -- yaw 传感器0补偿参数(cm). Defaults to 0.0.</p></li>
+<li><p><strong>sensor_type</strong> (<a class="reference internal" href="#ros_robot.sensor.sensor_correct.SensorType" title="ros_robot.sensor.sensor_correct.SensorType"><em>SensorType</em></a><em>, </em><em>optional</em>) -- 传感器类型 0: ping   1: ir  2: lidar. Defaults to SensorType.PING.</p></li>
+<li><p><strong>correction_mode</strong> (<a class="reference internal" href="#ros_robot.sensor.sensor_correct.CorrectMode" title="ros_robot.sensor.sensor_correct.CorrectMode"><em>CorrectMode</em></a><em>, </em><em>optional</em>) -- 修正模式   0:传感器0  1:传感器1  2:传感器0 &amp;&amp; 1</p></li>
+<li><p><strong>start</strong> (<em>bool</em><em>, </em><em>optional</em>) -- 启动标志  // true:启动修正  false:查询状态. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>(success, err_data)  成功标志   True: 执行结束  False: 执行中, -1 : ping端口选择错误, -2 : ir端口选择错误 , -3 : 传感器类型错误 , -101 :安全控制触发(急停) , -102 : 未知错误</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.SensorCorrect.wait_finished">
+<span class="sig-name descname"><span class="pre">wait_finished</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_correct.SensorCorrect.wait_finished" title="Link to this definition"></a></dt>
+<dd><p>等待修正结束</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.SensorType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.sensor.sensor_correct.</span></span><span class="sig-name descname"><span class="pre">SensorType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_correct.SensorType" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.SensorType.IR">
+<span class="sig-name descname"><span class="pre">IR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_correct.SensorType.IR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.SensorType.LIDAR">
+<span class="sig-name descname"><span class="pre">LIDAR</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_correct.SensorType.LIDAR" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_correct.SensorType.PING">
+<span class="sig-name descname"><span class="pre">PING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_correct.SensorType.PING" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-ros_robot.sensor.sensor_manager">
+<span id="ros-robot-sensor-sensor-manager-module"></span><h2>ros_robot.sensor.sensor_manager module<a class="headerlink" href="#module-ros_robot.sensor.sensor_manager" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.IRSensor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.sensor.sensor_manager.</span></span><span class="sig-name descname"><span class="pre">IRSensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_manager.IRSensor" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>红外传感器枚举</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.IRSensor.IR_0">
+<span class="sig-name descname"><span class="pre">IR_0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.IRSensor.IR_0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.IRSensor.IR_1">
+<span class="sig-name descname"><span class="pre">IR_1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.IRSensor.IR_1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.IRSensor.IR_2">
+<span class="sig-name descname"><span class="pre">IR_2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.IRSensor.IR_2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.IRSensor.IR_3">
+<span class="sig-name descname"><span class="pre">IR_3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.IRSensor.IR_3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.LSBSensor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.sensor.sensor_manager.</span></span><span class="sig-name descname"><span class="pre">LSBSensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_manager.LSBSensor" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>红外传感器枚举</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.LSBSensor.LSBS">
+<span class="sig-name descname"><span class="pre">LSBS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.LSBSensor.LSBS" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.LSBSensor.LSB_0">
+<span class="sig-name descname"><span class="pre">LSB_0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.LSBSensor.LSB_0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.LSBSensor.LSB_1">
+<span class="sig-name descname"><span class="pre">LSB_1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.LSBSensor.LSB_1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.LSBSensor.LSB_2">
+<span class="sig-name descname"><span class="pre">LSB_2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.LSBSensor.LSB_2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.LSBSensor.LSB_3">
+<span class="sig-name descname"><span class="pre">LSB_3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.LSBSensor.LSB_3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SensorManager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.sensor.sensor_manager.</span></span><span class="sig-name descname"><span class="pre">SensorManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robotics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SensorManager" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>传感器管理器</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SensorManager.are_all_sensors_initialized">
+<span class="sig-name descname"><span class="pre">are_all_sensors_initialized</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SensorManager.are_all_sensors_initialized" title="Link to this definition"></a></dt>
+<dd><p>检查所有传感器是否都已初始化(至少收到过一次数据)
+:param None:</p>
+<dl class="field-list simple">
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>如果所有传感器都至少收到过一次数据则返回True,否则返回False</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SensorManager.destory">
+<span class="sig-name descname"><span class="pre">destory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SensorManager.destory" title="Link to this definition"></a></dt>
+<dd><p>销毁实例</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SensorManager.get_sensor_reading">
+<span class="sig-name descname"><span class="pre">get_sensor_reading</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sensor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Enum</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SensorManager.get_sensor_reading" title="Link to this definition"></a></dt>
+<dd><p>获取指定传感器的测量值</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sensor</strong> (<em>Enum</em>) -- 传感器枚举(SonarSensor、IRSensor、LSBSensor)</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>传感器的测量距离值,如果传感器不存在则返回None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SensorManager.get_uninitialized_sensors">
+<span class="sig-name descname"><span class="pre">get_uninitialized_sensors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SensorManager.get_uninitialized_sensors" title="Link to this definition"></a></dt>
+<dd><p>获取未初始化的传感器名称列表</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong></p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>未初始化传感器的名称列表</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SonarSensor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ros_robot.sensor.sensor_manager.</span></span><span class="sig-name descname"><span class="pre">SonarSensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SonarSensor" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>声纳传感器枚举</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SonarSensor.SONAR_0">
+<span class="sig-name descname"><span class="pre">SONAR_0</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SonarSensor.SONAR_0" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SonarSensor.SONAR_1">
+<span class="sig-name descname"><span class="pre">SONAR_1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SonarSensor.SONAR_1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SonarSensor.SONAR_2">
+<span class="sig-name descname"><span class="pre">SONAR_2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SonarSensor.SONAR_2" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ros_robot.sensor.sensor_manager.SonarSensor.SONAR_3">
+<span class="sig-name descname"><span class="pre">SONAR_3</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#ros_robot.sensor.sensor_manager.SonarSensor.SONAR_3" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-ros_robot.sensor">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-ros_robot.sensor" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="ros_robot.oms.html" class="btn btn-neutral float-left" title="ros_robot.oms package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="ros_robot.utils.html" class="btn btn-neutral float-right" title="ros_robot.utils package" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, Zhang Chao.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

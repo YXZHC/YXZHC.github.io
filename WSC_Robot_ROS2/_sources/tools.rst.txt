@@ -1,0 +1,45 @@
+tools package
+=============
+
+Submodules
+----------
+
+tools.授权激活 module
+---------------------
+
+.. automodule:: tools.授权激活
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tools.机器人日志获取 module
+---------------------------
+
+.. automodule:: tools.机器人日志获取
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tools.机器人软重启 module
+-------------------------
+
+.. automodule:: tools.机器人软重启
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+tools.获取机器人温度 module
+---------------------------
+
+.. automodule:: tools.获取机器人温度
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: tools
+   :members:
+   :undoc-members:
+   :show-inheritance:

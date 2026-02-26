@@ -1,0 +1,45 @@
+ros\_robot.sensor package
+=========================
+
+Submodules
+----------
+
+ros\_robot.sensor.imu module
+----------------------------
+
+.. automodule:: ros_robot.sensor.imu
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.sensor.lidar module
+------------------------------
+
+.. automodule:: ros_robot.sensor.lidar
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.sensor.sensor\_correct module
+----------------------------------------
+
+.. automodule:: ros_robot.sensor.sensor_correct
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ros\_robot.sensor.sensor\_manager module
+----------------------------------------
+
+.. automodule:: ros_robot.sensor.sensor_manager
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ros_robot.sensor
+   :members:
+   :undoc-members:
+   :show-inheritance:

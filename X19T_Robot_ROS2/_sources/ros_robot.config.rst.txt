@@ -1,0 +1,10 @@
+ros\_robot.config package
+=========================
+
+Module contents
+---------------
+
+.. automodule:: ros_robot.config
+   :members:
+   :undoc-members:
+   :show-inheritance:

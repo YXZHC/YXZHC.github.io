@@ -1,0 +1,21 @@
+wsc\_robotic.user package
+=========================
+
+Submodules
+----------
+
+wsc\_robotic.user.robot\_action module
+--------------------------------------
+
+.. automodule:: wsc_robotic.user.robot_action
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: wsc_robotic.user
+   :members:
+   :undoc-members:
+   :show-inheritance:

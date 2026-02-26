@@ -1,0 +1,21 @@
+ros\_robot.navigation package
+=============================
+
+Submodules
+----------
+
+ros\_robot.navigation.base\_motion\_kit module
+----------------------------------------------
+
+.. automodule:: ros_robot.navigation.base_motion_kit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ros_robot.navigation
+   :members:
+   :undoc-members:
+   :show-inheritance:

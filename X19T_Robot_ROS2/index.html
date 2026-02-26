@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HB_Ros_Robot_Python documentation &mdash; HB_Ros_Robot_Python 2.0.0 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=b15d7ad8"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="HB_Ros_Robot_Python" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            HB_Ros_Robot_Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">API 接口:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">HB_Ros_Robot_Python</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">HB_Ros_Robot_Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">HB_Ros_Robot_Python documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hb-ros-robot-python-documentation">
+<h1>HB_Ros_Robot_Python documentation<a class="headerlink" href="#hb-ros-robot-python-documentation" title="Link to this heading"></a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">HB_Ros_Robot_Python</span></code> (别名 <code class="docutils literal notranslate"><span class="pre">ros_robot</span></code>) 是一套面向 ROS(机器人操作系统)的高层封装 Python 库，旨在抽象底层 ROS 话题、服务与动作服务器的通信细节，为开发者提供简洁、统一、开箱即用的机器人控制接口。</p>
+<p>通过该库，开发者无需深入理解底层 ROS 框架的复杂交互逻辑，即可快速实现机器人的底盘运动、导航规划、外设控制、传感器数据读取、机器视觉处理等核心功能，大幅降低 ROS 机器人应用开发的门槛，提升开发效率。</p>
+<p>该库适用于配备底盘、导航模块、升降电机、舵机、各类传感器(IMU、激光雷达、红外等)及视觉相机的轮式机器人，广泛应用于教学演示、小型自主巡检、物料抓取等场景。</p>
+<hr class="docutils" />
+<section id="id1">
+<h2>核心功能模块<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">ros_robot</span></code> 采用模块化设计，各功能模块职责清晰，相互配合形成完整的机器人控制链路，核心模块及功能如下:</p>
+<ul class="simple">
+<li><p><strong>ros_robot.chassis - 底盘控制模块</strong>
+机器人运动基础模块，负责底盘速度控制、里程计管理及 IO 端口操作，核心能力包括:
+- 底盘状态管理(<code class="docutils literal notranslate"><span class="pre">ChassisManager</span></code>): 支持自动/手动运动模式切换、速度指令发送、里程计数据/位姿获取、里程计初始化/清零。
+- IO 端口管理(<code class="docutils literal notranslate"><span class="pre">IOManager</span></code>): 读取数字输入状态、设置数字输出电平，满足外接外设信号交互需求。</p></li>
+<li><p><strong>ros_robot.navigation - 导航运动规划模块</strong>
+高阶运动规划模块，支持多种预设运动模式，无需手动拼接速度指令即可实现复杂路径运动，核心能力包括:
+- 运动套件管理(<code class="docutils literal notranslate"><span class="pre">BaseMotionKit</span></code>): 支持差速跟随、全向轮运动、点对点运动、基础旋转/直线运动等模式。
+- 运动状态反馈: 实时获取执行进度、当前位姿等数据，支持运动取消、等待执行完成等操作。</p></li>
+<li><p><strong>ros_robot.oms - 外设操作管理模块</strong>
+非底盘外设控制模块，涵盖升降电机和舵机，满足机器人抓取、姿态调整等扩展需求，核心能力包括:
+- 升降电机控制(<code class="docutils literal notranslate"><span class="pre">LiftMotor</span></code>): 支持回零、目标位置设置、行程限制查询及运动反馈获取。
+- 舵机管理(<code class="docutils literal notranslate"><span class="pre">ServoManager</span></code>): 支持单个/多个舵机 PWM 信号设置、复位，预设相机俯仰、夹具控制等快捷接口。</p></li>
+<li><p><strong>ros_robot.sensor - 传感器数据采集模块</strong>
+各类内置传感器数据封装模块，提供统一的初始化校验及数据获取方式，核心能力包括:
+- 常规传感器管理(<code class="docutils literal notranslate"><span class="pre">SensorManager</span></code>): 读取红外、超声波、限位传感器检测数据。
+- 高精度传感器管理: IMU 姿态/角速度获取、激光雷达扫描数据/指定角度测距值获取。
+- 传感器校准(<code class="docutils literal notranslate"><span class="pre">SensorCorrect</span></code>): 支持红外、激光雷达、超声波等传感器校准，提升采集精度。</p></li>
+<li><p><strong>ros_robot.utils - 工具辅助模块</strong>
+机器人开发通用辅助工具模块，解决文件操作、控制算法等需求，核心能力包括:
+- PID 控制器(<code class="docutils literal notranslate"><span class="pre">PIDController</span></code>): 实现标准 PID 算法，支持控制输出计算、控制器状态复位。
+- 文件管理(<code class="docutils literal notranslate"><span class="pre">FileManager</span></code>): 支持机器人端文件/文件夹上传、下载、删除及系统命令执行。</p></li>
+<li><p><strong>ros_robot.vision - 机器视觉处理模块</strong>
+基础机器视觉能力模块，为机器人自主识别、抓取提供视觉支撑，核心能力包括:
+- 相机控制: 支持彩色视频流读取、深度相机抓拍、视频流启停。
+- 目标检测与处理: 支持彩色球检测、3D 目标中心提取、相对坐标转世界坐标。</p></li>
+<li><p><strong>ros_robot.config - 配置管理模块</strong>
+全库配置支撑模块，负责加载、存储机器人各类硬件参数(底盘、传感器校准、外设行程等)，保障各功能模块正常运行。</p></li>
+</ul>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">API 接口:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">HB_Ros_Robot_Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ros_robot.html">ros_robot package</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">模块索引</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">搜索页面</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="modules.html" class="btn btn-neutral float-right" title="HB_Ros_Robot_Python" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2026, Zhang Chao.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

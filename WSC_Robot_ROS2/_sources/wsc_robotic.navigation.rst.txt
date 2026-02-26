@@ -1,0 +1,21 @@
+wsc\_robotic.navigation package
+===============================
+
+Submodules
+----------
+
+wsc\_robotic.navigation.base\_motion\_kit module
+------------------------------------------------
+
+.. automodule:: wsc_robotic.navigation.base_motion_kit
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: wsc_robotic.navigation
+   :members:
+   :undoc-members:
+   :show-inheritance:

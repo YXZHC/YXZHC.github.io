@@ -1,0 +1,53 @@
+wsc\_robotic.oms package
+========================
+
+Submodules
+----------
+
+wsc\_robotic.oms.lift\_motor module
+-----------------------------------
+
+.. automodule:: wsc_robotic.oms.lift_motor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.oms.oms\_param module
+----------------------------------
+
+.. automodule:: wsc_robotic.oms.oms_param
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.oms.rotate\_motor module
+-------------------------------------
+
+.. automodule:: wsc_robotic.oms.rotate_motor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.oms.servo module
+-----------------------------
+
+.. automodule:: wsc_robotic.oms.servo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wsc\_robotic.oms.servo\_actuator module
+---------------------------------------
+
+.. automodule:: wsc_robotic.oms.servo_actuator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: wsc_robotic.oms
+   :members:
+   :undoc-members:
+   :show-inheritance:
